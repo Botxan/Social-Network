@@ -14,7 +14,7 @@ import packnetwork.Network;
 import packnetwork.Person;
 
 @DisplayName("MAIN CLASS for testing the Social Network class")
-public class networkTests {
+public class NetworkTests {
 	private static Network network;
 	
 	@BeforeEach

@@ -14,6 +14,11 @@ import java.util.Arrays;
 
 import exceptions.*;
 
+/**
+ * Represents a social network where people can make relationships
+ * @author Oihan
+ *
+ */
 public class Network {
 	
 	// Hashmap to store relationships (edges) in the network (graph)
@@ -27,8 +32,8 @@ public class Network {
 	}
 	
 	/**
-	 * Returns the unique instance of Social Network
-	 * @return
+	 * Returns the unique instance of SocialNetwork
+	 * @return the unique instance of the social network
 	 */
 	public static Network getInstance() {
 		if (instance == null) instance = new Network();
@@ -43,8 +48,7 @@ public class Network {
 	}
 	
 	/**
-	 * 
-	 * @param Adds to the network the person passed by parameter.
+	 * Adds to the network the person passed by parameter.
 	 * @param p the person to be added to the network.
 	 * @throws ElementAlreadyExistsException when the person to be added is already in the network.
 	 */
@@ -57,7 +61,7 @@ public class Network {
 	/**
 	 * Reads people data from the file passed by parameter and loads it into the network
 	 * @param f the file with people data
-	 * @throws IOException
+	 * @throws IOException when the target file has not been found
 	 */
 	public void loadPeople(File f) throws IOException {
 		BufferedReader reader = new BufferedReader(new FileReader(f));
@@ -98,6 +102,11 @@ public class Network {
 		network.get(p2).add(p1.getID());
 	}
 	
+	/**
+	 * Loads relationships from external file.
+	 * @param f the target file
+	 * @throws IOException if the target file can not be found
+	 */
 	public void loadRelationships(File f) throws IOException {
 		BufferedReader reader = new BufferedReader(new FileReader(f));
 		String line;
@@ -136,7 +145,8 @@ public class Network {
 	
 	/**
 	 * Checks whether or not a person is already inside the network.
-	 * @return true <=> the person is inside the network.
+	 * @param p the target person
+	 * @return true iff the person is inside the network.
 	 */
 	public boolean hasPerson(Person p) {
 		return network.containsKey(p);
@@ -146,7 +156,7 @@ public class Network {
 	 * Checks whether or not a relationship exists between 2 people.
 	 * @param p1 person 1.
 	 * @param p2 person 2.
-	 * @return true <=> a relationship exist.
+	 * @return true iff a relationship exist.
 	 * @throws ElementNotFoundException when either of the two people is not inside the network.
 	 */
 	public boolean hasRelationship(Person p1, Person p2) throws ElementNotFoundException {
@@ -175,7 +185,7 @@ public class Network {
 	/**
 	 * Prints out to the file passed by parameter all the people inside the network.
 	 * @param f output file
-	 * @throws IOException
+	 * @throws IOException when the target file can not be found
 	 */
 	public void printPeople(File f) throws IOException {
 		BufferedWriter writer = new BufferedWriter(new FileWriter(f));

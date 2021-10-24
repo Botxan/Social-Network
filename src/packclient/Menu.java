@@ -1,4 +1,6 @@
-package packnetwork;
+package packclient;
+import packnetwork.Network;
+
 
 import java.io.File;
 import java.util.Scanner;
@@ -6,16 +8,8 @@ import java.util.Scanner;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileSystemView;
 
-/**
- * Represents the menu printed in the console with which the client can interact with the social network
- * @author Oihan
- */
 public class Menu {
 	
-	/**
-	 * The main function where the menu is displayed and the client can interact with the social network
-	 * @param args no args are passed
-	 */
 	public static void main(String[] args) {
 		// Multi-file chooser
 		JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());

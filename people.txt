@@ -1,56 +1,6 @@
 idperson,name,lastname,birthdate,gender,birthplace,home,studiedat,workplaces,films,groupcode
-Laura001,Laura,Gran,19-6-1994,Donostia,UPV,Donostia,Despicable_Me;Agora,G6106
-CHA29,CHAU,COLVARD,21-4-1948,Kurdzhali,Saint Paul;Rasht,Eisenstadt,Pirates 2: Dead Man’s Chest,G0000
-Liza99,Elizabeth,Taylor-Gardner,5-5-1935,Boston,New York,Paris,Hold High the Torch;The White Cliffs of Dover;Cleopatra,G0001
-Cris01,Cristilaine,Rithyele,01-01-1991,Ribeiro de Aquino,Calasanz;Informatika,Donostia,Jackass 3D;Robin Hood;The Social Network,G6101
-OSV49,OSVALDO,BRISTER,9-7-1949,Brasov,Chinandega,Diyarbakir;Abakan,Spider-Man 2;Star Wars;The Empire Strikes Back,G0000
-Mikel34,Jon Mikel,Lopez de Haro,9-9-1700,Caracas,Lizeoa;UPV/EHU,Caracas,The Lord of the Rings;Forrest Gump,G0001
-Alejo,Mikel Alejo,Barcina,1-1-1994,Ordizia,Donostia,,Toy Story;The Lion King;Shrek,G6102
-guilherme85,Guilherme,Bussi,26-11-1985,vitoria,unamuno,vitoria;beirut;paris,fast and the furious;shrek,G6107
-asdfa59,Asdrubal,Farruquito,8-8-1959,Donostia,Jesuitinas,Nigeria;Colombia,Thirteen;Titanic,G6104
-Aitor001,Aitor,Iturrioz,29-06-1988,Donosti,EHU,Computer_Science,Persona,G6105
-Leire1,Leire,Alba-Aguirre,5-5-1955,Seville,Insti Penaflorida;Imperial College,London;Madrid;New York,The Matrix;Forrest Gump;Casablanca,G0001
-jon89,Jon,Garrido,2-2-1989,Donostia,Amara-Berri;Usandizaga-Peñaflorida,donostia;renteria,amelie;la vida es bella,G6107
-Mik01,Mikel,Dalmau,25-03-1991,Galdakao,Elesalde;Informatika,Galdakao,Red;The A-Team,G6101
-Igor,Igor,Cejudo,23-3-1989,Donostia,Donostia,Donostia;Amsterdam,ET;Titanic,G6102
-HER20,HERMAN,SMITHWICK,15-9-1919,Baquerizo Moreno,Nancy,Osaka;Washington D.C.;Schefferville;Libreville,The Upside of Anger;ET;Star Wars;Jurassic Park,G0000
-Jandrol094,Alejandro,Andoain,23-4-1983,Donostia,La Salle,Donostia;Kiev,Men in Black;American Pie,G6103
-Roberto22,Roberto,Egia,4-4-1933,Vitoria-Gasteiz,The Becket School;Paris-Sorbonne,Paris;Vitoria-Gasteiz,Alien;Life is Beautiful;Toy Story 3,G0001
-Gonz01,Gonzalo,Gonzalez,12-09-1982,Lasarte,Calasanz;Informatika,Valencia;Vitoria;Donostia,Casablanca;Avatar,G6101
-Alv01,Alvaro,Calo,20-07-1992,Donostia,Calasanz;Arquitectura,,The Expendables;True Grit;The A-Team,G6101
-Arantza22,Aranzazu,Bidaurreta,3-3-1833,Amezketa,Tolosa,Paris;Nice,Goodfellas;Taxi Driver;Double Indemnity,G0001
-Fran451,Francisco,Zumalakarregui,23-2-1983,Frnace,Armentia Ikastola;Koldo Mitxelena;EHU,Aizkorri;Anboto;Madrid,Munich;Brigadas rojas: La banda Baader Meinhof;Operacion Ogro,G6103
-Olivia002,Olivia,Olazabal,28-3-1994,Irun,UPV,Donostia,Despicable_Me;Dear_John,G6106
-Carla001,Carla,Aldabaldetrecu,4-11-1994,Donostia,UPV,Donostia,Despicable_Me;Grown_Ups,G6106
-Markel002,Markel,Chen,01-01-1990,Bola�os_de_Calatraba,Donosti,Cooking,Penguin,G6105
-Markel001,Markel,Saez_de_Jauregui,02-08-1993,Donosti,EHU,Computer_Science,El_Bueno_El_Feo_y_el_Malo, G6105
-Xabi112,Xabier,Lete,1-1-1901,Lisbon,CollegeA;Birmingham,Madrid;Lisbon;London,The Godfather,G0001
-Luis01,Luis,Miguel,05-11-1992,Galdakao,Elesalde;Informatika,,The Town;Yogi Bear 3D;Knight and Day,G6101
-Mike673,Mikel,Garcia,11-8-1980,Donostia,Teresianas;Santo Tomas,Donostia;Madrid;Paris,Taxi�Driver;Casablanca,G6103
-Gisella11,Gisella,Fabricci,3-3-1993,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,The Lion King;The Third Man;Star Wars: Episode VI - Return of the Jedi;Princess Mononoke,G0001
-CRI57,CRISTI,PARADOWSKI,2-7-1903,Bethanien,Las Tablas,Ouahigouya;Czestochowa,Harry Potter 2: Chamber of Secrets,G0000
-Bea01,Beatriz,Penas,08-01-1992,Irun,Aleman;Psicologia,,Robin Hood;Due Date;Sex and the City 2,G6101
-And01,Ander,Maillo,14-07-1991,Irun,Aleman;Arquitectura,,The Bounty Hunter;Robin Hood;Valentine's Day,G6101
-Jon232,Jon,Garcia,3-3-1990,Donostia,LaSalle;UPV/EHU;Stanford,Connecticut,Star Wars;The Godfather;The Godfather: Part II,G0001
-Olatz001,Olatz,Castano,15-11-1994,Donosti,EHU,Computer_Science,Kick-Ass,G6105
-Miriam21,Miriam Cristina,de la Sierra,2-2-1982,Helsinki,Madrid;London;New York;Casablanca,Casablanca,Casablanca;The Silence of the Lambs,G0001
-Eid01,Eider,Iturralde,15-05-1989,Donostia,Lizeo;Deusto,Donostia;Usurbil,The Tourist;Avatar,G6101
-Eri01,Erik,Rodrigues,15-04-1991,Donostia,Lizeo;Informatika,,Hot Tub Time Machine;Grown Ups,G6101
-RAM35,RAMIRO,LAVALLIE,7-1-1999,San Felipe,Popondetta;Barinas;Fergana,Louang Namtha;Mata-Utu,Home Alone;Run Lola Run;Star Wars;Harry Potter 1: Sorcerer’s Stone,G0000
-And02,Andrea,Fernandez,07-02-1991,Donostia,Lizeo;Psicologia,,Sex and the City 2;Eat Pray Love;Percy Jackson & the Olympians: The Lightning Thief,G6101
-Marta059,Marta,Garcia,8-5-1994,Madrid,UPV,Donostia,Ramona_and_Beezus;Babies,G6106
-paquito78,Paquito,Sanz,25-12-1978,werner-von-gymnasium,paris,markina,human centipede;kill bill,G6107
-Maria001,Maria,Garcia,05-06-1994,Donosti,EHU,Computer_Science,Despicable_Me,G6105
-Iker,Iker,Salmon,19-4-1979,Donostia,Donostia,Bilbao;Pamplona,Batman;ET,G6102
-igor89,Igor,Cortes,23-3-1989,Donostia,Axular-Lizeoa,Euskadi;Amsterdam,ET;Titanic,G6104
-Esti374,Estibaliz,Matsuki,12-7-1988,Santiago de Chile,Salesianas;Mendebaldea,Canada;Sahara;Berlin;Lenningrade,Schindler's list;Der Untergang,G6103
-Gor01,Gorka,Vitoria,14-02-1988,Donostia,Zurriola;Informatika,Donostia;Belfast,Jackass 3D;Sherlock Holmes,G6101
-markel94,Markel,Sanz,14-9-1994,Donostia,Zubiri-Manteo,London;Euskadi,Gladiator,G6104
-mircea92,Mircea,Dumitru,30-10-1992,tolosa,Usandizaga-Peñaflorida,donostia,american history x;the family man,G6107
-Agnetta33,Agnetta,Bensson,1-1-1940,London,Stockholm,Stockholm;London;Oslo;Paris,The Intouchables;To Kill a Mockingbird;Reservoir Dogs;Cinema Paradiso,G0001
-Leire002,Leire,Roa,7-2-1993,Irun,UPV,Donostia,Despicable_Me;Love_And_Other_Drugs,G6106
-Bizenta223,Bizenta,Juaristi,1-1-1501,La Paz,Onati,Bolivia,12 Angry Men;Fight Club,G0001
-John111,John,Obamy,6-6-1966,The White House,Brooklyn;Yale,Hawaii;Iowa,Seven Samurai;Forrest Gump;The Shawshank Redemption,G0001
-ainhize90,Ainhize,Goenaga,8-1-1990,Donostia,Peña Florida;Usandizaga,Euskadi;Bolonia,Los Miserables,G6104
-Javi,Javier,Frias,7-5-1993,Zumaia,Donostia,,ET;Ghost Busters;Batman,G6102
-ETH28,ETHAN,VIOREL,18-4-1979,Tokyo,Daloa;Zacatecoluca;Luan Chau,Cherkasy;Haka;Kaesong;Bondoukou,Spider-Man 2;Star Wars;American Beauty;Chicago;Raiders of the Lost Ark;Lord of the Rings: The Return of the King;The Good Girl;Run Lola Run,G0000
+Arya89,Arya,Stark,15-4-1997,Winterfell,Bristol,Braavos;Bristol,The Departed,G612067
+Sansa86,Sansa,Stark,21-2-1996,Winterfell,Northampton,Winterfell,A Beautiful Mind;American Beauty;Titanic,G612067
+Bran90,Bran,Stark,9-4-1999,Winterfell,London,King's Landing;Westeros,Crash;In the Company of Men;The Return of the King,G612067
+Rob83,Robb,Stark,18-6-1986,Winterfell,Elderslie,Winterfell,Lord of the Rings: The Return of the King;The Road Home,G612067
+Ed63,Eddard,Stark,17-4-1959,Winterfell,Sheffield,Winterfell,The Empire Strikes Back;Independence Day,G612067

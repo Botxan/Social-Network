@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
 import packnetwork.Person;
 
 @DisplayName("MAIN CLASS for testing the person object that conforms the social network")
-public class personTests {
+public class PersonTests {
 	private static Person p1;
 	private static Person p2;
 	
