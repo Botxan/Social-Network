@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 /**
  * Represents a person than can be added to a social network.
- * @author Oihan
+ * @author Oihan and Eneko
  *
  */
 public class Person {

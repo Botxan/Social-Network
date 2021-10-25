@@ -16,7 +16,7 @@ import exceptions.*;
 
 /**
  * Represents a social network where people can make relationships
- * @author Oihan
+ * @author Oihan and Eneko
  *
  */
 public class Network {

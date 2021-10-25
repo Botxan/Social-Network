@@ -8,7 +8,7 @@ import javax.swing.filechooser.FileSystemView;
 
 /**
  * Represents the menu printed in the console with which the client can interact with the social network
- * @author Oihan
+ * @author Oihan and Eneko
  */
 public class Menu {
 	
