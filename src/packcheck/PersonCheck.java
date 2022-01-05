@@ -31,8 +31,12 @@ public class PersonCheck {
 		p1.removeWorkedat(0);
 		p1.addWorkedat("new workedat");
 		p1.removeMovie(0);
-		p1.addMovie("new movie");
 		p1.setGroupcode("new " + p1.getGroupcode());
+		
+		// Movies sorting testing
+		p1.addMovie("Underwater");
+		p1.addMovie("El libro de la selva");
+		p1.addMovie("Dune");
 		
 		// Print changed person
 		System.out.println("\nPerson " + p1.getID() + " after changes: ");

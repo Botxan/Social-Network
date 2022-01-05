@@ -24,8 +24,8 @@ public class NetworkCheck {
 		network.addPerson(p3);
 		
 		// Add relationships
-		network.addRelationship(p1, p2);
-		network.addRelationship(p2, p3);
+		network.addRelationship(p1.getID(), p2.getID());
+		network.addRelationship(p2.getID(), p3.getID());
 		
 		// Print network
 		System.out.println(network);

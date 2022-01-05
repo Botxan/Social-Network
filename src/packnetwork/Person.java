@@ -1,16 +1,19 @@
 package packnetwork;
+import exceptions.InvalidAttributeException;
 import exceptions.InvalidPersonIdException;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Represents a person than can be added to a social network.
  * @author Oihan and Eneko
  *
  */
-public class Person {
+public class Person implements Comparable<Person> {
 	private final String ID;
 	private String firstName, lastName, birthdate, gender, birthplace, home, groupcode;
+	private int componentID;
 	private ArrayList<String> studiedat, workedat, movies;
 	
 	/**
@@ -36,10 +39,9 @@ public class Person {
 	 * @param groupcode group code
 	 * @throws InvalidPersonIdException when the id is empty
 	 */
-	public Person(String ID, String firstName, String lastName, String birthdate, String gender,
-			String birthplace, String home, ArrayList<String> studiedat, ArrayList<String> workedat,
-			ArrayList<String> movies, String groupcode) throws InvalidPersonIdException {
-		if (ID.equals("")) throw new InvalidPersonIdException();
+	public Person(String ID, String firstName, String lastName, String birthdate,
+			String gender, String birthplace, String home, ArrayList<String> studiedat,
+			ArrayList<String> workedat, ArrayList<String> movies, String groupcode) {
 		this.ID = ID;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -49,16 +51,22 @@ public class Person {
 		this.home = home;
 		
 		this.studiedat = new ArrayList<String>();
-		if (studiedat != null) 
-			for (String item: studiedat) this.studiedat.add(item);
+		if (studiedat != null) {
+			for (String item: studiedat) this.studiedat.add(item.toLowerCase());
+			Collections.sort(studiedat);			
+		}
 		
 		this.workedat = new ArrayList<String>();
-		if (workedat != null) 
-			for (String item: workedat) this.workedat.add(item);
+		if (workedat != null) {
+			for (String item: workedat) this.workedat.add(item.toLowerCase());
+			Collections.sort(workedat);
+		}
 		
 		this.movies = new ArrayList<String>();
-		if (movies != null)
-			for (String item: movies) this.movies.add(item);
+		if (movies != null) {			
+			for (String item: movies) this.movies.add(item.toLowerCase());
+			Collections.sort(movies);
+		}
 		
 		this.groupcode = groupcode;
 	}
@@ -184,7 +192,8 @@ public class Person {
 	 * @param studiedat the place where the person has studied
 	 */
 	public void addStudiedat(String studiedat) {
-		this.studiedat.add(studiedat);
+		int pos = Collections.binarySearch(this.studiedat, studiedat);
+		if (pos < 0) this.studiedat.add(-pos-1, studiedat.toLowerCase());
 	}
 	
 	/**
@@ -217,7 +226,8 @@ public class Person {
 	 * @param workedat the place where the person has worked
 	 */
 	public void addWorkedat(String workedat) {
-		this.workedat.add(workedat);
+		int pos = Collections.binarySearch(this.workedat, workedat);
+		if (pos < 0) this.workedat.add(-pos-1, workedat.toLowerCase());
 	}
 	
 	/**
@@ -250,7 +260,8 @@ public class Person {
 	 * @param movies the movie that the person has seen
 	 */
 	public void addMovie(String movies) {
-		this.movies.add(movies);
+		int pos = Collections.binarySearch(this.movies, movies);
+		if (pos < 0) this.movies.add(-pos-1, movies.toLowerCase());
 	}
 	
 	/**
@@ -286,13 +297,105 @@ public class Person {
 		this.groupcode = groupcode;
 	}
 	
+	/**
+	 * Getter for the component
+	 */
+	public int getComponentID() {
+		return componentID;
+	}
+	
+	/**
+	 * Setter for the component
+	 * @param componentID the component ID
+	 */
+	public void setComponentID(int componentID) {
+		this.componentID = componentID;
+	}
+	
 	/* ******* Getters and Setters ******* */
+	
+	/**
+	 * Given an integer, returns the attribute
+	 * 0  => idperson
+	 * 1  => name
+	 * 2  => lastname
+	 * 4  => birthdate
+	 * 5  => gender
+	 * 6  => birthplace
+	 * 7  => home
+	 * 8  => studiedat
+	 * 9  => workplaces
+	 * 10 => films
+	 * 11 => groupcode
+	 * @param i The attribute number equivalent
+	 * @return The attribute value
+	 */
+	public String getAttribute(int i) {
+		String result = "";
+		switch(i) {
+			case 0:
+				result = getID(); 
+				break;
+			case 1:
+				result = getFirstName();
+				break;
+			case 2:
+				result = getLastName();
+				break;
+			case 3:
+				result = getBirthdate();
+				break;
+			case 4:
+				result = getGender();
+				break;
+			case 5:
+				result = getBirthplace();
+				break;
+			case 6:
+				result = getHome();
+				break;
+			case 7:
+				result = String.join(";", getStudiedat()); 
+				break;
+			case 8:
+				result = String.join(";", getWorkedat());
+				break;	
+			case 9:
+				result = String.join(result, getMovies());
+				break;
+			case 10:
+				result = getGroupcode();
+				break;
+			default:
+				throw new InvalidAttributeException();
+		}
+		
+		return result;
+	}
+	
+	/**
+	 * Returns a string representation of a Person, with just the attributes
+	 * passed by parameter
+	 * @param attributes the attributes to be printed
+	 * @return an string representation of all the attributes passed by
+	 * parameter
+	 */
+	public String toString(int[] attributes) {
+		String result = "";
+		for (int i = 0; i < attributes.length; i++) // iterate over selected attributes
+			result += getAttribute(attributes[i]) + ", ";
+		
+		return result.replaceAll(", $", "");
+	}
 	
 	@Override
 	public String toString() {
-		return ID + "," + firstName + "," + lastName + "," + birthdate + "," + home + "," + String.join(";", studiedat) + "," + String.join(";", workedat) + "," + String.join(";", movies) + "," + groupcode;		
+		return ID + "," + firstName + "," + lastName + "," + birthdate + "," + gender + "," + birthplace + "," + home + "," + String.join(";", studiedat) + "," + String.join(";", workedat) + "," + String.join(";", movies) + "," + groupcode;		
 	}
 	
+	/**
+	 * 2 people are the same if they have the same id.
+	 */
 	@Override
 	public boolean equals(Object o) {
 		// If the object is compared with itself then return true
@@ -313,5 +416,17 @@ public class Person {
 		int result = 17;
 		result = 31 * result + ID.hashCode();
 		return result;
+	}
+	
+	/**
+	 * Default ordering by id (ascending)
+	 * @param o the person to get compared
+	 * @return greater than 0 if instantiated person has greater id.
+	 * less than 0 if instantiated person has smaller id
+	 * Otherwise return 0
+	 */
+	@Override
+	public int compareTo(Person o) {
+		return getID().compareTo(o.getID());
 	}
 }

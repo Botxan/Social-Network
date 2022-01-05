@@ -1,6 +1,56 @@
 idperson,name,lastname,birthdate,gender,birthplace,home,studiedat,workplaces,films,groupcode
-Arya89,Arya,Stark,15-4-1997,Winterfell,Bristol,Braavos;Bristol,The Departed,G612067
-Sansa86,Sansa,Stark,21-2-1996,Winterfell,Northampton,Winterfell,A Beautiful Mind;American Beauty;Titanic,G612067
-Bran90,Bran,Stark,9-4-1999,Winterfell,London,King's Landing;Westeros,Crash;In the Company of Men;The Return of the King,G612067
-Rob83,Robb,Stark,18-6-1986,Winterfell,Elderslie,Winterfell,Lord of the Rings: The Return of the King;The Road Home,G612067
-Ed63,Eddard,Stark,17-4-1959,Winterfell,Sheffield,Winterfell,The Empire Strikes Back;Independence Day,G612067
+Igor,Igor,Cejudo,23-3-1989,female,Donostia,Donostia,donostia,donostia;amsterdam,et;titanic,G6102
+jon89,Jon,Garrido,2-2-1989,male,Donostia,Donostia,amara-berri;usandizaga-peã±aflorida,donostia;renteria,amelie;la vida es bella,G6107
+Luis01,Luis,Miguel,05-11-1992,male,Galdakao,Galdakao,elesalde;informatika,,the town;yogi bear 3d;knight and day,G6101
+Jandrol094,Alejandro,Andoain,23-4-1983,male,Moscow,Donostia,la salle,donostia;kiev,men in black;american pie,G6103
+Alv01,Alvaro,Calo,20-07-1992,male,Donostia,Donostia,calasanz;arquitectura,,the expendables;true grit;the a-team,G6101
+CRI57,CRISTI,PARADOWSKI,2-7-1903,female,Marib,Bethanien,las tablas,ouahigouya;czestochowa,harry potter 2: chamber of secrets,G0000
+Roberto22,Roberto,Egia,4-4-1933,male,Vitoria-Gasteiz,Vitoria-Gasteiz,the becket school;paris-sorbonne,paris;vitoria-gasteiz,alien;life is beautiful;toy story 3,G0001
+ETH28,ETHAN,VIOREL,18-4-1979,male,New Plymouth,Tokyo,daloa;zacatecoluca;luan chau,cherkasy;haka;kaesong;bondoukou,spider-man 2;star wars;american beauty;chicago;raiders of the lost ark;lord of the rings: the return of the king;the good girl;run lola run,G0000
+Bea01,Beatriz,Penas,08-01-1992,female,Irun,Irun,aleman;psicologia,,robin hood;due date;sex and the city 2,G6101
+Fran451,Francisco,Zumalakarregui,23-2-1983,male,Errenteria,Frnace,armentia ikastola;koldo mitxelena;ehu,aizkorri;anboto;madrid,munich;brigadas rojas: la banda baader meinhof;operacion ogro,G6103
+Laura001,Laura,Gran,19-6-1994,female,Donostia,Donostia,upv,donostia,despicable_me;agora,G6106
+CHA29,CHAU,COLVARD,21-4-1948,female,Bordeaux,Kurdzhali,saint paul;rasht,eisenstadt,pirates 2: dead manâ€™s chest,G0000
+Liza99,Elizabeth,Taylor-Gardner,5-5-1935,female,Rome,Boston,new york,paris,hold high the torch;the white cliffs of dover;cleopatra,G0001
+Markel001,Markel,Saez_de_Jauregui,02-08-1993,male,Elorrio,Donosti,ehu,computer_science,el_bueno_el_feo_y_el_malo, G6105
+Markel002,Markel,Chen,01-01-1990,male,Bacelona,Bolaños_de_Calatraba,donosti,cooking,penguin,G6105
+Mik01,Mikel,Dalmau,25-03-1991,male,Galdakao,Galdakao,elesalde;informatika,galdakao,red;the a-team,G6101
+Aitor001,Aitor,Iturrioz,29-06-1988,male,Zumarraga,Donosti,ehu,computer_science,persona,G6105
+Leire1,Leire,Alba-Aguirre,5-5-1955,female,Tolosa,Seville,insti penaflorida;imperial college,london;madrid;new york,the matrix;forrest gump;casablanca,G0001
+Olivia002,Olivia,Olazabal,28-3-1994,female,Irun,Irun,upv,donostia,despicable_me;dear_john,G6106
+Gonz01,Gonzalo,Gonzalez,12-09-1982,male,Valencia,Lasarte,calasanz;informatika,valencia;vitoria;donostia,casablanca;avatar,G6101
+Gisella11,Gisella,Fabricci,3-3-1993,female,Torino,Donostia,rome;upv/ehu,rome;madrid;donostia,the lion king;the third man;star wars: episode vi - return of the jedi;princess mononoke,G0001
+Arantza22,Aranzazu,Bidaurreta,3-3-1833,female,Larraitz,Amezketa,tolosa,paris;nice,goodfellas;taxi driver;double indemnity,G0001
+Carla001,Carla,Aldabaldetrecu,4-11-1994,female,Donostia,Donostia,upv,donostia,despicable_me;grown_ups,G6106
+asdfa59,Asdrubal,Farruquito,8-8-1959,male,Donostia,Donostia,jesuitinas,nigeria;colombia,thirteen;titanic,G6104
+Eri01,Erik,Rodrigues,15-04-1991,male,Donostia,Donostia,lizeo;informatika,,hot tub time machine;grown ups,G6101
+Xabi112,Xabier,Lete,1-1-1901,male,Madrid,Lisbon,collegea;birmingham,madrid;lisbon;london,the godfather,G0001
+And02,Andrea,Fernandez,07-02-1991,female,Donostia,Donostia,lizeo;psicologia,,sex and the city 2;eat pray love;percy jackson & the olympians: the lightning thief,G6101
+And01,Ander,Maillo,14-07-1991,male,Irun,Irun,aleman;arquitectura,,the bounty hunter;robin hood;valentine's day,G6101
+RAM35,RAMIRO,LAVALLIE,7-1-1999,male,Santa Clara,San Felipe,popondetta;barinas;fergana,louang namtha;mata-utu,home alone;run lola run;star wars;harry potter 1: sorcererâ€™s stone,G0000
+Mike673,Mikel,Garcia,11-8-1980,male,Donostia,Donostia,teresianas;santo tomas,donostia;madrid;paris,taxi driver;casablanca,G6103
+Marta059,Marta,Garcia,8-5-1994,female,Donostia,Madrid,upv,donostia,ramona_and_beezus;babies,G6106
+Iker,Iker,Salmon,19-4-1979,male,Bilbao,Donostia,donostia,bilbao;pamplona,batman;et,G6102
+igor89,Igor,Cortes,23-3-1989,male,Donostia,Donostia,axular-lizeoa,euskadi;amsterdam,et;titanic,G6104
+paquito78,Paquito,Sanz,25-12-1978,male,usa,werner-von-gymnasium,paris,markina,human centipede;kill bill,G6107
+Olatz001,Olatz,Castano,15-11-1994,female,Barakaldo,Donosti,ehu,computer_science,kick-ass,G6105
+Eid01,Eider,Iturralde,15-05-1989,female,Donostia,Donostia,lizeo;deusto,donostia;usurbil,the tourist;avatar,G6101
+Jon232,Jon,Garcia,3-3-1990,male,Donostia,Donostia,lasalle;upv/ehu;stanford,connecticut,star wars;the godfather;the godfather: part ii,G0001
+Bizenta223,Bizenta,Juaristi,1-1-1501,female,Azkoitia,La Paz,onati,bolivia,12 angry men;fight club,G0001
+HER20,HERMAN,SMITHWICK,15-9-1919,male,Arusha,Baquerizo Moreno,nancy,osaka;washington d.c.;schefferville;libreville,the upside of anger;et;star wars;jurassic park,G0000
+John111,John,Obamy,6-6-1966,male,Connecticut,The White House,brooklyn;yale,hawaii;iowa,seven samurai;forrest gump;the shawshank redemption,G0001
+ainhize90,Ainhize,Goenaga,8-1-1990,female,Donostia,Donostia,peã±a florida;usandizaga,euskadi;bolonia,los miserables,G6104
+Maria001,Maria,Garcia,05-06-1994,female,Eibar,Donosti,ehu,computer_science,despicable_me,G6105
+Javi,Javier,Frias,7-5-1993,male,Arrasate,Zumaia,donostia,,et;ghost busters;batman,G6102
+Esti374,Estibaliz,Matsuki,12-7-1988,female,Tokyo,Santiago de Chile,salesianas;mendebaldea,canada;sahara;berlin;lenningrade,schindler's list;der untergang,G6103
+Cris01,Cristilaine,Rithyele,01-01-1991,female,Ribeiro De Aquino,Ribeiro de Aquino,calasanz;informatika,donostia,jackass 3d;robin hood;the social network,G6101
+Gor01,Gorka,Vitoria,14-02-1988,male,Donostia,Donostia,zurriola;informatika,donostia;belfast,jackass 3d;sherlock holmes,G6101
+markel94,Markel,Sanz,14-9-1994,male,Donostia,Donostia,zubiri-manteo,london;euskadi,gladiator,G6104
+OSV49,OSVALDO,BRISTER,9-7-1949,male,Jelenia Gora,Brasov,chinandega,diyarbakir;abakan,spider-man 2;star wars;the empire strikes back,G0000
+Mikel34,Jon Mikel,Lopez de Haro,9-9-1700,male,Bilbao,Caracas,lizeoa;upv/ehu,caracas,the lord of the rings;forrest gump,G0001
+Miriam21,Miriam Cristina,de la Sierra,2-2-1982,female,Zamora,Helsinki,madrid;london;new york;casablanca,casablanca,casablanca;the silence of the lambs,G0001
+Alejo,Mikel Alejo,Barcina,1-1-1994,male,Ordizia,Ordizia,donostia,,toy story;the lion king;shrek,G6102
+guilherme85,Guilherme,Bussi,26-11-1985,male,brasil,vitoria,unamuno,vitoria;beirut;paris,fast and the furious;shrek,G6107
+mircea92,Mircea,Dumitru,30-10-1992,male,romania,tolosa,usandizaga-peã±aflorida,donostia,american history x;the family man,G6107
+Agnetta33,Agnetta,Bensson,1-1-1940,female,Sweden,London,stockholm,stockholm;london;oslo;paris,the intouchables;to kill a mockingbird;reservoir dogs;cinema paradiso,G0001
+Leire002,Leire,Roa,7-2-1993,female,Irun,Irun,upv,donostia,despicable_me;love_and_other_drugs,G6106
