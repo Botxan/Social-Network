@@ -7,7 +7,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -583,9 +582,8 @@ public class Network {
 	public void printNetwork(File f) throws IOException {
 		BufferedWriter writer = new BufferedWriter(new FileWriter(f));
 		writer.write("idperson,name,lastname,birthdate,gender,birthplace,home,studiedat,workplaces,films,groupcode\n");
-		for (Person p: people.values()) {
+		for (Person p: people.values()) 
 			writer.write(p.toString() + "\n");
-		}
 		
 		writer.close();
 	}

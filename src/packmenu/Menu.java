@@ -2,6 +2,8 @@ package packmenu;
 import packnetwork.Network;
 import packnetwork.Person;
 import packnetwork.PersonComparator;
+import packutils.PeopleGenerator;
+import packutils.RelationGenerator;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -30,7 +32,7 @@ public class Menu {
 		// User selection
 		int action = -1;
 		
-		while (action != 10) {
+		while (action != 11) {
 			System.out.println("+-------------- MENU --------------+");
 			System.out.println("| 1 | Load people into the network  |");
 			System.out.println("|-----------------------------------|");
@@ -50,7 +52,9 @@ public class Menu {
 			System.out.println("|-----------------------------------|");
 			System.out.println("| 9 | Cliques                       |");		
 			System.out.println("|-----------------------------------|");
-			System.out.println("| 10| Quit                          |");
+			System.out.println("| 10| Extras                        |");		
+			System.out.println("|-----------------------------------|");
+			System.out.println("| 11| Quit                          |");
 			System.out.println("+-----------------------------------+");
 			
 			try {
@@ -92,7 +96,11 @@ public class Menu {
 						printCliques();
 						break;
 						
-					case 10: // Quit
+					case 10:
+						extrasMenu();
+						break;
+						
+					case 11: // Quit
 						break;
 						
 					default:
@@ -406,4 +414,77 @@ public class Menu {
 	}
 	
 	/* ***** </> SEARCH MENU FUNCTIONS ***** */
+	
+	/* ***** EXTRAS MENU FUNCTIONS ***** */
+	
+	public static void extrasMenu() throws IOException {
+		int option = -1;
+		
+		while(option != 3) {
+			
+			System.out.println("+---------- EXTRAS MENU -----------+");
+			System.out.println("|1 | Generate random people        |");
+			System.out.println("|----------------------------------|");
+			System.out.println("|2 | Generate random relationships |");
+			System.out.println("|----------------------------------|");
+			System.out.println("|3 | Back to main menu             |");
+			System.out.println("+----------------------------------+");
+			
+			option = sc.nextInt();
+			
+			switch(option) {
+				case 1:
+					generateRandomPeople();
+					break;
+				case 2:
+					generateRandomRelations();
+					break;
+				case 3: // Back to main menu
+					break;
+				default:
+					System.out.println("Invalid selection.");
+					break;
+			}
+		}
+	}
+	
+	/**
+	 * Generates random people to an output file
+	 * @throws IOException BufferedWriter/FileWriter exception handling.
+	 */
+	public static void generateRandomPeople() throws IOException {
+		PeopleGenerator pplgenerator = PeopleGenerator.getInstance();
+		System.out.print("How many people do you want to create? ");
+		int n = sc.nextInt();
+		System.out.print("Name for the output file: ");
+		String fname = sc.next() + ".txt";
+		pplgenerator.generateRandomPeopleFile(n, fname);
+		System.out.println("File " + fname + " succesfully created with " +  (n == 1 ? "person" : "people") + "people data.");
+	}
+	
+	/**
+	 * Generates random relationships to an output file with the people
+	 * given in a file
+	 * @throws IOException
+	 */
+	public static void generateRandomRelations() throws IOException {
+		PeopleGenerator pplgenerator = PeopleGenerator.getInstance();
+		System.out.println("Select a file from which to generate the relations. ");
+		
+		int returnValue = jfc.showOpenDialog(null);
+		if (returnValue == JFileChooser.APPROVE_OPTION) {
+			File file = jfc.getSelectedFile();
+			try {
+				System.out.print("Name of the output file: ");
+				String outputFName = sc.next() + ".txt";
+				
+				// Generate the random relationships
+				RelationGenerator.generateRandomRelationshipsFile(file, outputFName);
+				
+				System.out.println("File " + outputFName + " with random relationships successfully created.");
+			} catch (IOException e) {e.printStackTrace();}
+		}
+	}
+	
+	/* ***** </> EXTRAS MENU FUNCTIONS ***** */
 }
