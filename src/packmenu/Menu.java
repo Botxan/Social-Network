@@ -27,12 +27,19 @@ public class Menu {
 	// Stdin reader
 	private static Scanner sc;
 	
+	
+	/* ***** MAIN MENU ***** */
+	
+	/**
+	 * Invokes the main menu.
+	 * @param args no args required.
+	 */
 	public static void main(String[] args) {
 		sc = new Scanner(System.in);
 		// User selection
-		int action = -1;
+		MainMenuOption option = MainMenuOption.READY;
 		
-		while (action != 11) {
+		while (option != MainMenuOption.QUIT) {
 			System.out.println("+-------------- MENU --------------+");
 			System.out.println("| 1 | Load people into the network  |");
 			System.out.println("|-----------------------------------|");
@@ -58,59 +65,165 @@ public class Menu {
 			System.out.println("+-----------------------------------+");
 			
 			try {
-				action = sc.nextInt();
-				switch(action) {
-					case 1:
-						loadPeople();			
+				option = MainMenuOption.values()[sc.nextInt()];
+				switch(option) {
+					case LD_PEOPLE:
+						loadPeople();	
 						break;
 						
-					case 2:
+					case LD_RELATIONS:
 						loadRelations();
 						break;
 						
-					case 3:
+					case PRINT_PEOPLE:
 						printPeople();
 						break;
 						
-					case 4:
+					case PRINT_RELATIONS:
 						printRelations();
 						break;
 						
-					case 5:
+					case SEARCH:
 						searchMenu();
 						break;
 									
-					case 6:
+					case GROUP_BY_MOVIES:
 						groupByMovies();
 						break;
 					
-					case 7:
+					case SHORTEST_PATH:
 						shortestChain();
 						break;
 						
-					case 8:
+					case LONGEST_PATH:
 						longestChain();
 						break;
 						
-					case 9:
+					case CLIQUES:
 						printCliques();
 						break;
 						
-					case 10:
+					case EXTRAS:
 						extrasMenu();
 						break;
 						
-					case 11: // Quit
+					case QUIT: // Quit
 						break;
 						
 					default:
 						System.out.println("Invalid selection.");
 						break;
 				}
-			} catch (Exception e) {}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 		sc.close();
 	}
+	
+	/* ***** </> MAIN MENU ***** */
+	
+	/* ***** SEARCH MENU ***** */
+	
+	/**
+	 * Secondary menu for searching functions
+	 * @param sc scanner
+	 * @param network the social network
+	 * @throws IOException if scanner input format is unexpected
+	 */
+	public static void searchMenu() throws IOException {
+		SearchMenuOption option = SearchMenuOption.READY;
+		String output = "";
+		
+		while(option != SearchMenuOption.BACK_TO_MAIN_MENU) {
+			
+			System.out.println("+---------- SEARCH MENU -----------+");
+			System.out.println("|1 | Friends by last name          |");
+			System.out.println("|----------------------------------|");
+			System.out.println("|2 | By city                       |");
+			System.out.println("|----------------------------------|");
+			System.out.println("|3 | Between two dates             |");
+			System.out.println("|----------------------------------|");
+			System.out.println("|4 | By residence file             |");
+			System.out.println("|----------------------------------|");
+			System.out.println("|5 | Back to main menu             |");
+			System.out.println("+----------------------------------+");
+			
+			option = SearchMenuOption.values()[sc.nextInt()];
+			
+			switch(option) {
+				case BY_LAST_NAME:
+					output = findFriendsByLastName();
+					break;
+					
+				case BY_CITY: // By city
+					output = findPeopleByCity();
+					break;
+					
+				case BETWEEN_TWO_DATES: // Between dates
+					output = findPeopleBetweenDates();
+					break;
+					
+				case BY_RESIDENCE_FILE: // By residence file
+					output = findPeopleByResidenceFile();
+					break;
+					
+				case BACK_TO_MAIN_MENU: // Back to main menu
+					break;
+				
+				default:
+					System.out.println("Invalid selection.");
+					break;
+			}
+			
+			if (option != SearchMenuOption.BACK_TO_MAIN_MENU) {				
+				if (output.isEmpty()) System.out.println("The search did not retrieve any result");
+				else displayPrintOptions(output);	
+			}
+		}
+	}
+	
+	/* ***** </> SEARCH MENU ***** */
+	
+	
+	/* ***** EXTRAS MENU ***** */
+	
+	/**
+	 * Secondary menu for social network extra add-ons.
+	 * @throws IOException file read/write exception handling.
+	 */
+	public static void extrasMenu() throws IOException {
+		ExtrasMenuOption option = ExtrasMenuOption.READY;
+		
+		while(option != ExtrasMenuOption.BACK_TO_MAIN_MENU) {
+			
+			System.out.println("+---------- EXTRAS MENU -----------+");
+			System.out.println("|1 | Generate random people        |");
+			System.out.println("|----------------------------------|");
+			System.out.println("|2 | Generate random relationships |");
+			System.out.println("|----------------------------------|");
+			System.out.println("|3 | Back to main menu             |");
+			System.out.println("+----------------------------------+");
+			
+			option = ExtrasMenuOption.values()[sc.nextInt()];
+			
+			switch(option) {
+				case GENERATE_RANDOM_PEOPLE:
+					generateRandomPeople();
+					break;
+				case GENERATE_RANDOM_RELATIONS:
+					generateRandomRelations();
+					break;
+				case BACK_TO_MAIN_MENU: // Back to main menu
+					break;
+				default:
+					System.out.println("Invalid selection.");
+					break;
+			}
+		}
+	}
+	
+	/* ***** </> EXTRAS MENU ***** */
 	
 	
 	/* ***** MAIN MENU FUNCTIONS ***** */
@@ -236,64 +349,6 @@ public class Menu {
 	/* ***** SEARCH MENU FUNCTIONS ***** */
 	
 	/**
-	 * Secondary menu for searching functions
-	 * @param sc scanner
-	 * @param network the social network
-	 * @throws IOException if scanner input format is unexpected
-	 */
-	public static void searchMenu() throws IOException {
-		int option = -1;
-		String output = "";
-		
-		while(option != 5) {
-			
-			System.out.println("+---------- SEARCH MENU -----------+");
-			System.out.println("|1 | Friends by last name          |");
-			System.out.println("|----------------------------------|");
-			System.out.println("|2 | By city                       |");
-			System.out.println("|----------------------------------|");
-			System.out.println("|3 | Between two dates             |");
-			System.out.println("|----------------------------------|");
-			System.out.println("|4 | By residence file             |");
-			System.out.println("|----------------------------------|");
-			System.out.println("|5 | Back to main menu             |");
-			System.out.println("+----------------------------------+");
-			
-			option = sc.nextInt();
-			
-			switch(option) {
-				case 1:
-					output = findFriendsByLastName();
-					break;
-					
-				case 2: // By city
-					output = findPeopleByCity();
-					break;
-					
-				case 3: // Between dates
-					output = findPeopleBetweenDates();
-					break;
-					
-				case 4: // By residence file
-					output = findPeopleByResidenceFile();
-					break;
-					
-				case 5: // Back to main menu
-					break;
-				
-				default:
-					System.out.println("Invalid selection.");
-					break;
-			}
-			
-			if (option != 5) {				
-				if (output.isEmpty()) System.out.println("The search did not retrieve any result");
-				else displayPrintOptions(output);	
-			}
-		}
-	}
-	
-	/**
 	 * Retrieves an string that contains all friends of people whose last name
 	 * matches the one passed by stdin
 	 * @return string with people with the selected surname and their friends
@@ -415,38 +470,8 @@ public class Menu {
 	
 	/* ***** </> SEARCH MENU FUNCTIONS ***** */
 	
-	/* ***** EXTRAS MENU FUNCTIONS ***** */
 	
-	public static void extrasMenu() throws IOException {
-		int option = -1;
-		
-		while(option != 3) {
-			
-			System.out.println("+---------- EXTRAS MENU -----------+");
-			System.out.println("|1 | Generate random people        |");
-			System.out.println("|----------------------------------|");
-			System.out.println("|2 | Generate random relationships |");
-			System.out.println("|----------------------------------|");
-			System.out.println("|3 | Back to main menu             |");
-			System.out.println("+----------------------------------+");
-			
-			option = sc.nextInt();
-			
-			switch(option) {
-				case 1:
-					generateRandomPeople();
-					break;
-				case 2:
-					generateRandomRelations();
-					break;
-				case 3: // Back to main menu
-					break;
-				default:
-					System.out.println("Invalid selection.");
-					break;
-			}
-		}
-	}
+	/* ***** EXTRAS MENU FUNCTIONS ***** */
 	
 	/**
 	 * Generates random people to an output file

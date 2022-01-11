@@ -39,7 +39,6 @@ public class Network {
 	
 	// DFS Longest path
 	private List<String> longestPath;
-
 	
 	// Cliques in the network
 	private List<List<String>> cliques;
