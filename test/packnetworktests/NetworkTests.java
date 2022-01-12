@@ -48,7 +48,7 @@ public class NetworkTests {
 			Person p1 = new Person("Ed63");
 			network.addPerson(p1);
 			assertEquals(1, network.getNumberOfPeople());
-			assertTrue(network.hasPerson(p1));
+			assertTrue(network.hasPerson(p1.getID()));
 		}
 		
 		@Test
@@ -73,8 +73,8 @@ public class NetworkTests {
 				Person p2 = new Person("Rob83");
 				network.addPerson(p1);
 				network.addPerson(p2);
-				network.addRelationship(p1, p2);
-				assertTrue(network.hasRelationship(p1, p2));
+				network.addRelationship(p1.getID(), p2.getID());
+				assertTrue(network.hasRelationship(p1.getID(), p2.getID()));
 			} catch (Exception e) {
 				fail(System.err.toString());
 			}
@@ -87,8 +87,8 @@ public class NetworkTests {
 				Person p2 = new Person("Rob83");
 				network.addPerson(p1);
 				network.addPerson(p2);
-				network.addRelationship(p1, p2);
-				assertThrows(InvalidRelationshipException.class, () -> network.addRelationship(p1, p2));
+				network.addRelationship(p1.getID(), p2.getID());
+				assertThrows(InvalidRelationshipException.class, () -> network.addRelationship(p1.getID(), p2.getID()));
 		}
 		
 		@Test
@@ -96,7 +96,7 @@ public class NetworkTests {
 		public void testAddNonExistingRelationshipBetweenNonAddedPeople() {
 			Person p1 = new Person("Ed63");
 			Person p2 = new Person("Rob83");
-			assertThrows(ElementNotFoundException.class, () -> network.addRelationship(p1, p2));
+			assertThrows(ElementNotFoundException.class, () -> network.addRelationship(p1.getID(), p2.getID()));
 		}
 		
 		@Test
@@ -104,7 +104,7 @@ public class NetworkTests {
 		public void testAddNonExistingRelationshipBetweenSamePerson() {
 			Person p1 = new Person("Ed63");
 			network.addPerson(p1);
-			assertThrows(InvalidRelationshipException.class, () -> network.addRelationship(p1, p1));
+			assertThrows(InvalidRelationshipException.class, () -> network.addRelationship(p1.getID(), p1.getID()));
 		}
 	}	
 }

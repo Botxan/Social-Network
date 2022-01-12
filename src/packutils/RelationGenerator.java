@@ -12,31 +12,41 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Set;
 
+/**
+ * Class used to generate random people data.
+ * @author Oihan and Eneko
+ * @version v1
+ */
 public class RelationGenerator {
 	
 	static Random randnum; // Random seed
 	
-	public static void main(String[] args) throws IOException {
-		PeopleGenerator pplgenerator = PeopleGenerator.getInstance();
-		pplgenerator.generateRandomPeopleFile(5);
-		generateRandomRelationshipsFile(new File("randomPeople.txt"));
-		// Initialise random seed
+	/**
+	 * 
+	 * @param args no params required.
+	 */
+	public static void main(String[] args) {
+		try {
+			PeopleGenerator pplgenerator = PeopleGenerator.getInstance();
+			pplgenerator.generateRandomPeopleFile(5);
+			generateRandomRelationshipsFile(new File("randomPeople.txt"));
+		} catch (IOException e) {e.printStackTrace();}
 	}
 	
 	/**
-	 * Given a file with people, creates a file with random relations between them
-	 * @param people
-	 * @throws IOException 
+	 * Given a file with people, creates a file with random relations between them.
+	 * @param people the input file with people data.
+	 * @throws IOException read/write error handling.
 	 */
 	public static void generateRandomRelationshipsFile(File people) throws IOException {
 		generateRandomRelationshipsFile(people, "randomFriends.txt");
 	}
 	
 	/**
-	 * Given a file with people, creates a file with random relations between them
-	 * @param people
-	 * @param output the output file name
-	 * @throws IOException 
+	 * Given a file with people, creates a file with random relations between them.
+	 * @param people the input file with people data.
+	 * @param output the output file name.
+	 * @throws IOException read/write error handling.
 	 */
 	public static void generateRandomRelationshipsFile(File people, String output) throws IOException {
 		randnum = new Random();
@@ -51,7 +61,6 @@ public class RelationGenerator {
 	    	ids.add(sc.next());
 	    	sc.nextLine();
 	    }
-	    System.out.println("Done");
 	    sc.close();
 	    
 	    // Create a set with all the relations
@@ -83,7 +92,7 @@ public class RelationGenerator {
 	}
 	
 	/**
-	 * Represents a relation between two people
+	 * Represents a relation between two people.
 	 * @author Oihan and Eneko
 	 */
 	static class Relation {

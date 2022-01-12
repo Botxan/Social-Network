@@ -26,18 +26,18 @@ public class Person implements Comparable<Person> {
 	
 	/**
 	 * Main constructor for a person.
-	 * @param ID person identifier
-	 * @param firstName first name
-	 * @param lastName last name
-	 * @param birthdate birth date
-	 * @param gender gender
-	 * @param birthplace birth place
-	 * @param home home
-	 * @param studiedat places where the person has studied
-	 * @param workedat places where the person has worked
-	 * @param movies movies that the person has seen
-	 * @param groupcode group code
-	 * @throws InvalidPersonIdException when the id is empty
+	 * @param ID person identifier.
+	 * @param firstName first name.
+	 * @param lastName last name.
+	 * @param birthdate birth date.
+	 * @param gender gender.
+	 * @param birthplace birth place.
+	 * @param home home.
+	 * @param studiedat places where the person has studied.
+	 * @param workedat places where the person has worked.
+	 * @param movies movies that the person has seen.
+	 * @param groupcode group code.
+	 * @throws InvalidPersonIdException when the id is empty.
 	 */
 	public Person(String ID, String firstName, String lastName, String birthdate,
 			String gender, String birthplace, String home, ArrayList<String> studiedat,
@@ -76,7 +76,7 @@ public class Person implements Comparable<Person> {
 	
 	/**
 	 * Getter for the identifier.
-	 * @return the identifier
+	 * @return the identifier.
 	 */
 	public String getID() {
 		return ID;
@@ -84,7 +84,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Getter for the first name.
-	 * @return the first name
+	 * @return the first name.
 	 */
 	public String getFirstName() {
 		return firstName;
@@ -92,7 +92,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Setter for the first name.
-	 * @param firstName the first name
+	 * @param firstName the first name.
 	 */
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
@@ -100,7 +100,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Getter for the last name.
-	 * @return the last name
+	 * @return the last name.
 	 */
 	public String getLastName() {
 		return lastName;
@@ -108,7 +108,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Setter for the last name.
-	 * @param lastName the last name
+	 * @param lastName the last name.
 	 */
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
@@ -116,7 +116,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Getter for the birth date.
-	 * @return the birth date
+	 * @return the birth date.
 	 */
 	public String getBirthdate() {
 		return birthdate;
@@ -124,7 +124,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Setter for the birth date.
-	 * @param birthdate the birth date
+	 * @param birthdate the birth date.
 	 */
 	public void setBirthdate(String birthdate) {
 		this.birthdate = birthdate;
@@ -132,7 +132,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Getter for the gender.
-	 * @return the gender
+	 * @return the gender.
 	 */
 	public String getGender() {
 		return gender;
@@ -140,7 +140,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Setter for the gender.
-	 * @param gender the gender
+	 * @param gender the gender.
 	 */
 	public void setGender(String gender) {
 		this.gender = gender;
@@ -148,7 +148,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Getter for the birth place.
-	 * @return the birth place
+	 * @return the birth place.
 	 */
 	public String getBirthplace() {
 		return birthplace;
@@ -157,7 +157,7 @@ public class Person implements Comparable<Person> {
 	
 	/**
 	 * Setter for the birth place.
-	 * @param birthplace the birth place
+	 * @param birthplace the birth place.
 	 */
 	public void setBirthplace(String birthplace) {
 		this.birthplace = birthplace;
@@ -165,7 +165,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Getter for the home.
-	 * @return the home
+	 * @return the home.
 	 */
 	public String getHome() {
 		return home;
@@ -173,7 +173,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Setter for the home.
-	 * @param home the home
+	 * @param home the home.
 	 */
 	public void setHome(String home) {
 		this.home = home;
@@ -181,7 +181,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Getter for places where the person has studied.
-	 * @return places where the person has studied
+	 * @return places where the person has studied.
 	 */
 	public ArrayList<String> getStudiedat() {
 		return studiedat;
@@ -189,7 +189,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Adds a place where the person has studied.
-	 * @param studiedat the place where the person has studied
+	 * @param studiedat the place where the person has studied.
 	 */
 	public void addStudiedat(String studiedat) {
 		int pos = Collections.binarySearch(this.studiedat, studiedat);
@@ -198,8 +198,8 @@ public class Person implements Comparable<Person> {
 	
 	/**
 	 * Removes a place where the person has studied.
-	 * @param studiedat the place where the person has studied
-	 * @return true iff the place has been removed
+	 * @param studiedat the place where the person has studied.
+	 * @return true iff the place has been removed.
 	 */
 	public boolean removeStudiedat(String studiedat) {
 		return this.studiedat.remove(studiedat);
@@ -207,7 +207,7 @@ public class Person implements Comparable<Person> {
 	
 	/**
 	 * Removes a place where the person has studied.
-	 * @param index the index of the place to be removed
+	 * @param index the index of the place to be removed.
 	 */
 	public void removeStudiedat(int index) {
 		studiedat.remove(index);
@@ -215,7 +215,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Getter for places where the person has worked.
-	 * @return the places where the person has worked
+	 * @return the places where the person has worked.
 	 */
 	public ArrayList<String> getWorkedat() {
 		return workedat;
@@ -223,7 +223,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Adds a place where the person has worked.
-	 * @param workedat the place where the person has worked
+	 * @param workedat the place where the person has worked.
 	 */
 	public void addWorkedat(String workedat) {
 		int pos = Collections.binarySearch(this.workedat, workedat);
@@ -232,8 +232,8 @@ public class Person implements Comparable<Person> {
 	
 	/**
 	 * Removes a place where person has worked. 
-	 * @param workedat the place where the person has worked
-	 * @return true if the place has been removed
+	 * @param workedat the place where the person has worked.
+	 * @return true if the place has been removed.
 	 */
 	public boolean removeWorkedat(String workedat) {
 		return this.workedat.remove(workedat);
@@ -241,7 +241,7 @@ public class Person implements Comparable<Person> {
 	
 	/**
 	 * Removes a place where person has worked.
-	 * @param index the index of the place to be removed
+	 * @param index the index of the place to be removed.
 	 */
 	public void removeWorkedat(int index) {
 		this.workedat.remove(index);
@@ -257,7 +257,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Adds a movie that the person has seen.
-	 * @param movies the movie that the person has seen
+	 * @param movies the movie that the person has seen.
 	 */
 	public void addMovie(String movies) {
 		int pos = Collections.binarySearch(this.movies, movies);
@@ -266,8 +266,8 @@ public class Person implements Comparable<Person> {
 	
 	/**
 	 * Removes a movie that the person has seen.
-	 * @param movie the movie that the person has seen
-	 * @return true if the movie has been removed
+	 * @param movie the movie that the person has seen.
+	 * @return true if the movie has been removed.
 	 */
 	public boolean removeMovie(String movie) {
 		return this.movies.remove(movie);
@@ -275,7 +275,7 @@ public class Person implements Comparable<Person> {
 	
 	/**
 	 * Removes a movie that the person has seen.
-	 * @param index the index of the movie to be removed
+	 * @param index the index of the movie to be removed.
 	 */
 	public void removeMovie(int index) {
 		this.movies.remove(index);
@@ -283,7 +283,7 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Getter for the group code.
-	 * @return the group code
+	 * @return the group code.
 	 */
 	public String getGroupcode() {
 		return groupcode;
@@ -291,22 +291,23 @@ public class Person implements Comparable<Person> {
 
 	/**
 	 * Setter for the group code.
-	 * @param groupcode the group code
+	 * @param groupcode the group code.
 	 */
 	public void setGroupcode(String groupcode) {
 		this.groupcode = groupcode;
 	}
 	
 	/**
-	 * Getter for the component
+	 * Getter for the component.
+	 * @return the component id.
 	 */
 	public int getComponentID() {
 		return componentID;
 	}
 	
 	/**
-	 * Setter for the component
-	 * @param componentID the component ID
+	 * Setter for the component.
+	 * @param componentID the component ID.
 	 */
 	public void setComponentID(int componentID) {
 		this.componentID = componentID;
@@ -315,7 +316,7 @@ public class Person implements Comparable<Person> {
 	/* ******* Getters and Setters ******* */
 	
 	/**
-	 * Given an integer, returns the attribute
+	 * Given an integer, returns the attribute:
 	 * 0  => idperson
 	 * 1  => name
 	 * 2  => lastname
@@ -327,8 +328,8 @@ public class Person implements Comparable<Person> {
 	 * 9  => workplaces
 	 * 10 => films
 	 * 11 => groupcode
-	 * @param i The attribute number equivalent
-	 * @return The attribute value
+	 * @param i The attribute number equivalent.
+	 * @return The attribute value.
 	 */
 	public String getAttribute(int i) {
 		String result = "";
@@ -375,10 +376,10 @@ public class Person implements Comparable<Person> {
 	
 	/**
 	 * Returns a string representation of a Person, with just the attributes
-	 * passed by parameter
-	 * @param attributes the attributes to be printed
+	 * passed by parameter.
+	 * @param attributes the attributes to be printed.
 	 * @return an string representation of all the attributes passed by
-	 * parameter
+	 * parameter.
 	 */
 	public String toString(int[] attributes) {
 		String result = "";
@@ -419,11 +420,11 @@ public class Person implements Comparable<Person> {
 	}
 	
 	/**
-	 * Default ordering by id (ascending)
-	 * @param o the person to get compared
+	 * Default ordering by id (ascending).
+	 * @param o the person to get compared.
 	 * @return greater than 0 if instantiated person has greater id.
-	 * less than 0 if instantiated person has smaller id
-	 * Otherwise return 0
+	 * less than 0 if instantiated person has smaller id.
+	 * Otherwise return 0.
 	 */
 	@Override
 	public int compareTo(Person o) {

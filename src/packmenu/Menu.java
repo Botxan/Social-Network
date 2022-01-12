@@ -19,6 +19,11 @@ import javax.swing.filechooser.FileSystemView;
 import exceptions.ElementNotFoundException;
 import exceptions.InvalidPersonIdException;
 
+/**
+ * Represents the different menus with which the user can interact with the social network application.
+ * @author Oihan and Eneko
+ * @version v3
+ */
 public class Menu {
 	// Network
 	private static Network network = Network.getInstance();
@@ -26,6 +31,10 @@ public class Menu {
 	private static JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
 	// Stdin reader
 	private static Scanner sc;
+	
+	// Time measuring (analysis purpouses)
+	//static long startTime;
+	//static long endTime;
 	
 	
 	/* ***** MAIN MENU ***** */
@@ -66,6 +75,7 @@ public class Menu {
 			
 			try {
 				option = MainMenuOption.values()[sc.nextInt()];
+				
 				switch(option) {
 					case LD_PEOPLE:
 						loadPeople();	
@@ -127,8 +137,6 @@ public class Menu {
 	
 	/**
 	 * Secondary menu for searching functions
-	 * @param sc scanner
-	 * @param network the social network
 	 * @throws IOException if scanner input format is unexpected
 	 */
 	public static void searchMenu() throws IOException {
@@ -237,12 +245,19 @@ public class Menu {
 		int returnValue = jfc.showOpenDialog(null);
 		if (returnValue == JFileChooser.APPROVE_OPTION) {
 			File[] files = jfc.getSelectedFiles();
+			
+			// measure time (analysis purpouses)
+			//startTime = System.currentTimeMillis();
+			
 			for (int i = 0; i < files.length; i++)
 				try {
 					// Load each file to the network
 					network.loadPeople(files[i]);
-					System.out.println("People uploaded to the network successfully.");
+					System.out.println("People uploaded to the network successfully.");			
 				} catch (IOException e) {e.printStackTrace();}
+			
+			//endTime = System.currentTimeMillis();
+			//System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
 		}		
 	}
 	
@@ -255,11 +270,19 @@ public class Menu {
 		int returnValue = jfc.showOpenDialog(null);
 		if (returnValue == JFileChooser.APPROVE_OPTION) {
 			File[] files = jfc.getSelectedFiles();
+			
+			// measure time (analysis purpouses)
+			//startTime = System.currentTimeMillis();
+			
 			for (int i = 0; i < files.length; i++)
 				try {
 					network.loadRelationships(files[i]);
 					System.out.println("Relationships updated on the network successfully");
 				} catch (IOException e) {e.printStackTrace();}
+			
+			//endTime = System.currentTimeMillis();
+			//System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
+			
 		}
 	}
 	
@@ -267,17 +290,31 @@ public class Menu {
 	 * Print out to a file all people inside the network
 	 */
 	public static void printPeople() {
+		
+		// measure time (analysis purpouses)
+		//startTime = System.currentTimeMillis();
+		
 		try {
 			network.printNetwork(new File("./people.txt"));
 			System.out.println("People printed out to people.txt file");
 		} catch (IOException e) {e.printStackTrace();}
+		
+		//endTime = System.currentTimeMillis();
+		//System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
+		
 	}
 	
 	/**
 	 * Print relations in the stdin
 	 */
 	public static void printRelations() {
+		// measure time (analysis purpouses)
+		//startTime = System.currentTimeMillis();
+		
 		System.out.println(network);
+		
+		//endTime = System.currentTimeMillis();
+		//System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
 	}
 	
 	/**
@@ -287,6 +324,9 @@ public class Menu {
 	public static void groupByMovies() {
 		String output = "";
 		HashMap<String, LinkedList<String>> classes = network.groupByMovies();
+		
+		// measure time (analysis purpouses)
+		//startTime = System.currentTimeMillis();
 		
 		if (classes.isEmpty()) System.out.println("Network is empty");
 		else {
@@ -301,7 +341,12 @@ public class Menu {
 			}
 		}
 		
+		//endTime = System.currentTimeMillis();
+		//System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
+		
 		displayPrintOptions(output);
+		
+		
 	}
 	
 	/**
@@ -314,11 +359,17 @@ public class Menu {
 		System.out.print("Introduce the second user: ");
 		String target = sc.next();
 		
+		// measure time (analysis purpouses)
+		//startTime = System.currentTimeMillis();
+		
 		try {
 			network.shortestPath(source, target);
 		} catch (InvalidPersonIdException e) {
 			e.printStackTrace();
 		}
+		
+		//endTime = System.currentTimeMillis();
+		//System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
 	}
 	
 	/**
@@ -331,16 +382,30 @@ public class Menu {
 		System.out.print("Introduce the second user: ");
 		String target = sc.next();
 		
+		// measure time (analysis purpouses)
+		//startTime = System.currentTimeMillis();
+		
 		try {
 			network.longestPath(source, target);
 		} catch (InvalidPersonIdException e) {
 			e.printStackTrace();
 		}
+		
+		//endTime = System.currentTimeMillis();
+		//System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
 	}
 	
-	
+	/**
+	 * Prints every clique found in the network.
+	 */
 	public static void printCliques() {
+		// measure time (analysis purpouses)
+		//startTime = System.currentTimeMillis();
+		
 		network.printCliques();
+		
+		//endTime = System.currentTimeMillis();
+		//System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
 	}
 	
 	/* ***** </> MAIN MENU FUNCTIONS ***** */
@@ -367,7 +432,10 @@ public class Menu {
 		p.setLastName(lastName);
 		peopleIDs = network.findPeople(p, PersonComparator.bySurname);
 		
-		if (!peopleIDs.isEmpty()) {	
+		// measure time (analysis purpouses)
+		//startTime = System.currentTimeMillis();
+		
+		if (!peopleIDs.isEmpty()) {
 			// Find friends
 			for (String id: peopleIDs) {
 				p = network.getPerson(id);
@@ -376,6 +444,9 @@ public class Menu {
 				output += network.toString(friends, new int[] {1, 2});
 			}
 		}
+		
+		//endTime = System.currentTimeMillis();
+		//System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
 
 		return output;
 	}
@@ -395,12 +466,18 @@ public class Menu {
 		System.out.println("Insert a birthplace to search: ");
 		city = sc.next();
 		
+		// measure time (analysis purpouses)
+		//startTime = System.currentTimeMillis();
+		
 		// Create an empty person and get all the people with the same home
 		p = new Person("_");
 		p.setBirthplace(city);
 		peopleIDs = network.findPeople(p, PersonComparator.byBirthplace);
 		
 		if (!peopleIDs.isEmpty()) output = network.toString(peopleIDs, new int[] {0, 2});
+		
+		//endTime = System.currentTimeMillis();
+		//System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
 		
 		return output;
 	}
@@ -421,28 +498,50 @@ public class Menu {
 		System.out.println("Insert the highest date: ");
 		date2 = sc.next();
 		
+		// measure time (analysis purpouses)
+		//startTime = System.currentTimeMillis();
+		
 		peopleIDs = network.findSortedPeopleBetweenDates(date1, date2);
 		
 		if (!peopleIDs.isEmpty()) output = network.toString(peopleIDs, new int[] {0});
 		
+		//endTime = System.currentTimeMillis();
+		//System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
+		
 		return output;
 	}
 	
+	/**
+	 * Given a set of identifiers in a file, recovers the value of the attributes name, surname,
+	 * birthplace and studiedat of the people on the network whose birthplace matches the hometown
+	 * of the people who are described in the given file.
+	 * @return the people on the network whose birthplace matches the hometown of the people
+	 * who are described in the given file.
+	 */
 	public static String findPeopleByResidenceFile() {
 		String output = "";
 		int returnValue = jfc.showOpenDialog(null);
+		
+		// measure time (analysis purpouses)
+		//startTime = System.currentTimeMillis();
 		
 		if (returnValue == JFileChooser.APPROVE_OPTION) {
 			try {
 				File file = jfc.getSelectedFile();
 				output = network.findByResidenceFile(file);
-			} catch (ElementNotFoundException e) { e.printStackTrace(); }
+			} catch (ElementNotFoundException e) { e.printStackTrace(); }		
 		}
+		
+		//endTime = System.currentTimeMillis();
+		//System.out.println("Execution time: " + (endTime - startTime) + " milliseconds");
 		
 		return output;
 	}
 	
-	
+	/**
+	 * Displays the options for printing the menu operation results.
+	 * @param output the result of an operation in the network.
+	 */
 	public static void displayPrintOptions(String output) {
 		char printOption;
 		String outFileName;
@@ -489,11 +588,10 @@ public class Menu {
 	
 	/**
 	 * Generates random relationships to an output file with the people
-	 * given in a file
-	 * @throws IOException
+	 * given in a file.
+	 * @throws IOException file read error handling.
 	 */
 	public static void generateRandomRelations() throws IOException {
-		PeopleGenerator pplgenerator = PeopleGenerator.getInstance();
 		System.out.println("Select a file from which to generate the relations. ");
 		
 		int returnValue = jfc.showOpenDialog(null);

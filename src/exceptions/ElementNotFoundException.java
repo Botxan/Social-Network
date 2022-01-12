@@ -9,7 +9,7 @@ package exceptions;
 /**
  * ElementNotFoundException represents the situation in which a target element 
  * is not present in a collection
- * @author Oihan
+ * @author Oihan and Eneko
  *
  */
 @SuppressWarnings("serial")

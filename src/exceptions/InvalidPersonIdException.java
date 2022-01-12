@@ -4,7 +4,7 @@ package exceptions;
  * @author Oihan and Eneko
  */
 @SuppressWarnings("serial")
-public class InvalidPersonIdException extends Exception {
+public class InvalidPersonIdException extends RuntimeException {
 	/**
 	 * Sets up this exception with an appropriate message.
 	 */

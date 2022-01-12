@@ -16,7 +16,10 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 
-import exceptions.*;
+import exceptions.ElementNotFoundException;
+import exceptions.InvalidPersonIdException;
+import exceptions.ElementAlreadyExistsException;
+import exceptions.InvalidRelationshipException;
 
 /**
  * Represents a social network where people can make relationships
@@ -161,6 +164,15 @@ public class Network {
 		}		
 	}
 	
+
+	/**
+	 * Joins two components when a new relation is added and both people where
+	 * from different components
+	 * from different component
+	 * @param oldGroupID the component identifier to be removed
+	 * @param newGroupID the component identifier that will identify the
+	 * previously isolated components 
+	 */
 	public void updateGroup(int oldGroupID, int newGroupID) {
 		// change the component id property of each person in the old group
 		for (String pId: componentIDs.get(oldGroupID)) 
@@ -414,10 +426,11 @@ public class Network {
 	}
 	
 	/**
-	 * Returns the longest chain of relationships between 2 people
-	 * @param source the person from where start the chain
-	 * @param target the last person of the chain
-	 * @throws InvalidPersonIdException
+	 * Returns the longest chain of relationships between 2 people.
+	 * @param source the person from where start the chain.
+	 * @param target the last person of the chain.
+	 * @throws InvalidPersonIdException when the given id does not correspond
+	 * to any person in the network.
 	 */
 	public void longestPath(String source, String target) throws InvalidPersonIdException {		
 		if (!relations.containsKey(source) || !relations.containsKey(target))
@@ -436,8 +449,10 @@ public class Network {
 			longestPathWorker(source, target, path);
 	
 			// print the path
-			while(longestPath.size() > 1) System.out.print(longestPath.remove(0) + " -> ");
-			System.out.println(longestPath.remove(0));		
+			if (!longestPath.isEmpty()) {				
+				while(longestPath.size() > 1) System.out.print(longestPath.remove(0) + " -> ");
+				System.out.println(longestPath.remove(0));		
+			}
 		}
 		
 		
@@ -445,9 +460,9 @@ public class Network {
 	
 	/**
 	 * Worker recursive function for finding the longest chain between 2 people.
-	 * @param current the current person of the chain
-	 * @param target the last person of the chain
-	 * @param path the current try of the longest path
+	 * @param current the current person of the chain.
+	 * @param target the last person of the chain.
+	 * @param path the current try of the longest path.
 	 */
 	public void longestPathWorker(String current, String target, List<String> path) {
 		// if already found the longest path, stop recursion
@@ -482,7 +497,7 @@ public class Network {
 
 	/**
 	 * Prints every clique in a connected component using Bron Kerbosch algorithm.
-	 * @param component list of connected people
+	 * @param component list of connected people.
 	 */
 	private void findCliquesInComponent(List<String> R, List<String> P, List<String> X) {
 		if (P.isEmpty() && X.isEmpty() &&  R.size() > 4) cliques.add(R);
@@ -512,8 +527,8 @@ public class Network {
 	}
 	
 	/**
-	 * Finds common adjacent vertices between 2 group of vertices
-	 * @return
+	 * Finds common adjacent vertices between 2 group of vertices.
+	 * @return the intersection between both lists.
 	 */
 	private List<String> findCommonNeighbours(List<String> list1, List<String> list2) {
 		boolean found;
@@ -533,6 +548,36 @@ public class Network {
 		}
 		
 		return result;
+	}
+	
+	/**
+	 * Returns a string representation with the list of people passed
+	 * by parameter. Only the attributes passed by parameter are printed.
+	 * @param peopleIDs list of id's of people inside the network
+	 * @param attributes attributes of the Person object to be printed
+	 * @return an string representation of people passed
+	 * by parameter. Only the attributes passed by parameter are printed.
+	 */
+	public String toString(LinkedList<String> peopleIDs, int[] attributes) {
+		String result = "";
+		for (String id: peopleIDs) {
+			Person p = people.get(id);
+			result += p.toString(attributes) + "\n";
+		}
+		
+		return result;
+	}
+	
+	/**
+	 * Prints all the users as well as their relationships.
+	 */
+	@Override
+	public String toString() {
+		StringBuilder str = new StringBuilder();
+		for (String p: relations.keySet()) 
+			System.out.println(p + ": " + String.join(", ", relations.get(p)));	
+		
+		return str.toString();
 	}
 	
 	/**
@@ -575,8 +620,8 @@ public class Network {
 	
 	/**
 	 * Prints out to the file passed by parameter all the people inside the network.
-	 * @param f output file
-	 * @throws IOException when the target file can not be found
+	 * @param f output file.
+	 * @throws IOException when the target file can not be found.
 	 */
 	public void printNetwork(File f) throws IOException {
 		BufferedWriter writer = new BufferedWriter(new FileWriter(f));
@@ -585,35 +630,5 @@ public class Network {
 			writer.write(p.toString() + "\n");
 		
 		writer.close();
-	}
-	
-	/**
-	 * Returns a string representation with the list of people passed
-	 * by parameter. Only the attributes passed by parameter are printed.
-	 * @param peopleIDs list of id's of people inside the network
-	 * @param attributes attributes of the Person object to be printed
-	 * @return an string representation of people passed
-	 * by parameter. Only the attributes passed by parameter are printed.
-	 */
-	public String toString(LinkedList<String> peopleIDs, int[] attributes) {
-		String result = "";
-		for (String id: peopleIDs) {
-			Person p = people.get(id);
-			result += p.toString(attributes) + "\n";
-		}
-		
-		return result;
-	}
-	
-	/**
-	 * Prints all the users as well as their relationships.
-	 */
-	@Override
-	public String toString() {
-		StringBuilder str = new StringBuilder();
-		for (String p: relations.keySet()) 
-			System.out.println(p + ": " + String.join(", ", relations.get(p)));	
-		
-		return str.toString();
 	}
 }

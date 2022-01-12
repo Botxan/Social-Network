@@ -23,8 +23,8 @@ public class PersonTests {
 	@DisplayName("Initialization of the Person")
 	public static void initPerson() {
 		p1 = new Person("Ed63", "Eddard", "Stark", "17-4-1959", "male", "Winterfell",
-				"Winterfell",new ArrayList<String>(Arrays.asList("Sheffield")), new ArrayList<String>(Arrays.asList("Winterfell")),
-				new ArrayList<String>(Arrays.asList("The Empire Strikes Back", "Independence day")), "G61267");
+				"Winterfell",new ArrayList<String>(Arrays.asList("sheffield")), new ArrayList<String>(Arrays.asList("winterfell")),
+				new ArrayList<String>(Arrays.asList("the empire strikes back", "independence day")), "G61267");
 		p2 = new Person("Rob83"); 
 	}
 	
@@ -106,7 +106,7 @@ public class PersonTests {
 		@Tag("getter")
 		@DisplayName("Test getter for studiedat")
 		public void	testGetStudiedat() {
-			assertEquals(new ArrayList<String>(Arrays.asList("Sheffield")), p1.getStudiedat());
+			assertEquals(new ArrayList<String>(Arrays.asList("sheffield")), p1.getStudiedat());
 			assertEquals(new ArrayList<String>(), p2.getStudiedat());
 		}
 		
@@ -114,7 +114,7 @@ public class PersonTests {
 		@Tag("getter")
 		@DisplayName("Test getter for workedat")
 		public void	testGetWorkedat() {
-			assertEquals(new ArrayList<String>(Arrays.asList("Winterfell")), p1.getWorkedat());
+			assertEquals(new ArrayList<String>(Arrays.asList("winterfell")), p1.getWorkedat());
 			assertEquals(new ArrayList<String>(), p2.getWorkedat());
 		}
 		
@@ -122,7 +122,7 @@ public class PersonTests {
 		@Tag("getter")
 		@DisplayName("Test getter for movies")
 		public void	testGetMovies() {
-			assertEquals(new ArrayList<String>(Arrays.asList("The Empire Strikes Back", "Independence day")), p1.getMovies());
+			assertEquals(new ArrayList<String>(Arrays.asList("the empire strikes back", "independence day")), p1.getMovies());
 			assertEquals(new ArrayList<String>(), p2.getMovies());
 		}
 		
@@ -250,10 +250,9 @@ public class PersonTests {
 		@Tag("setter")
 		@DisplayName("Test for adding workedat")
 		public void testAddWorkedat() {
-			int i = p1.getWorkedat().size();
 			String workedat = "test";
 			p1.addWorkedat(workedat);
-			assertEquals(workedat, p1.getWorkedat().get(i));
+			assertEquals(workedat, p1.getWorkedat().get(0));
 		}
 		
 		@Test
@@ -302,10 +301,9 @@ public class PersonTests {
 		@Tag("setter")
 		@DisplayName("Test for adding a movie")
 		public void testAddMovie() {
-			int i = p1.getMovies().size();
 			String movie = "test";
 			p1.addMovie(movie);
-			assertEquals(movie, p1.getMovies().get(i));
+			assertEquals(movie, p1.getMovies().get(0));
 		}
 		
 		@Test

@@ -15,11 +15,13 @@ import packnetwork.Person;
 /**
  * This class is used to generate random data for the Social Network
  * @author Oihan and Eneko
- *
+ * @version v1
  */
 public class PeopleGenerator {
 	
-	// Singleton instance
+	/**
+	 * Singleton instance for the generator
+	 */
 	public static PeopleGenerator instance;
 	
 	// database paths
@@ -77,7 +79,7 @@ public class PeopleGenerator {
 	/**
 	 * Returns the unique instance of peopleGenerator.
 	 * @return the unique instance of the people generator.
-	 * @throws IOException.
+	 * @throws IOException file read/write error handling.
 	 */
 	public static PeopleGenerator getInstance() throws IOException {
 		if (instance == null) instance = new PeopleGenerator();
@@ -124,11 +126,22 @@ public class PeopleGenerator {
 		this.generateRandomPeopleFile(n, "randomPeople.txt");
 	}
 	
+	/**
+	 * Returns a file with random people. The number of people is passed by parameter.
+	 * @param n number of people.
+	 * @param fname the output file name.
+	 * @throws IOException read/write error handling.
+	 */
 	public void generateRandomPeopleFile(int n, String fname) throws IOException {
+		Set<Person> people = new HashSet<Person>();
+		
+		while (people.size() < n) people.add(generateRandomPerson());
+		
+		
 		BufferedWriter wr = new BufferedWriter(new FileWriter(fname));
 		wr.write("idperson,name,lastname,birthdate,gender,birthplace,home,studiedat,workplaces,films,groupcode\n");
-		for (int i = 0; i < n; i++)
-			wr.write(generateRandomPerson().toString() + "\n");
+		for (Person person: people)
+			wr.write(person.toString() + "\n");
 		wr.close();
 	}
 	

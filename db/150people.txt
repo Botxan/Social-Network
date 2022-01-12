@@ -1,0 +1,151 @@
+idperson,name,lastname,birthdate,gender,birthplace,home,studiedat,workplaces,films,groupcode
+Amir106,Amir,Lizarraga,1970-06-01,female,Aizarnazabal,Zaldibar,gorliz;barrika,bakio,in the company of men,G3253
+Mario451,Mario,Allende,1931-11-28,male,San Sebastián,Nabarniz,andoain,derio;ordizia,a beautiful mind;the last mimzy,G1185
+Unax899,Unax,Gárate,1859-09-18,male,Munitibar-Arbatzegi-Gerrikaitz,Gordexola,urduliz,itsasondo;trucios-turtzioz,chicago;the road home,G4803
+Anne439,Anne,Saldívar,1833-06-28,female,Etxebarri,Leza,zestoa;zaratamo,elburgo/burgelu,quinceanera;the road home,G3310
+Bruno164,Bruno,Aramburu,1825-04-13,male,Sopuerta,Etxebarria,lagrán,,harry potter 3: prisoner of azkeban;american beauty,G4073
+Imran423,Imran,Carrera,1823-04-01,female,Ajangiz,Alonsotegi,,zaldibia,forrest gump;pirates 3: at world’s end;et,G1219
+Gael613,Gael,Vizcaíno,1919-05-28,male,Bermeo,Mañaria,valle de carranza;san millán,berantevilla;zalla,pirates 3: at world’s end,G9372
+Adrián177,Adrián,Ruiz Oria,1952-01-05,male,Aduna,Moreda de Álava,ayala/aiara,,run lola run;return of the jedi,G8113
+Aitor125,Aitor,Villaorduña,1888-06-09,female,Bernedo,Lantarón,muxika;ribera alta;mutiloa,irun;mundaka,the empire strikes back,G8178
+Eder956,Eder,Ruiz Oria,1975-03-11,female,Lazkao,Zigoitia,urnieta;sestao;elburgo/burgelu,larraul,ghost busters,G1702
+Mikel377,Mikel,Salcedo,1863-06-27,female,Iurreta,Zaldibar,mendaro,orexa;barrundia,et,G2771
+Vega908,Vega,Carrera,1932-04-06,male,Baliarrain,Ordizia,berrobi,,,G9405
+Jule461,Jule,Larrea,1916-01-07,female,Getaria,Urduliz,alkiza,nabarniz,star wars;harry potter 3: prisoner of azkeban;gladiator;pirates 2: dead man’s chest,G5839
+Alvaro484,Alvaro,Carrera,1899-08-25,female,Hernani,Aia,zamudio,kuartango;mendexa,star wars: phantom menace;ghost busters;et,G9515
+Sofia905,Sofia,Ossa,1900-01-09,female,Lizartza,Lizartza,,beizama;elgoibar;bermeo;urduliz,home alone;harry potter 1: sorcerer’s stone;batman,G5543
+Alaia431,Alaia,Ascázubi,1928-04-09,male,Trucios-Turtzioz,Campezo/Kanpezu,villabuena de álava;portugalete,hernialde,,G1316
+Leire801,Leire,Vizcaíno,1859-01-04,female,Lagrán,Dima,arakaldo,beizama;muskiz,shrek the third;the empire strikes back;a beautiful mind,G5571
+Hugo922,Hugo,Echavarren,1972-07-14,male,Gorliz,Arratzu,,ormaiztegi,the empire strikes back,G1417
+Amets627,Amets,Axpe,1975-06-11,male,Ea,Zegama,aretxabaleta,orozko,quinceanera;super size me;star wars: phantom menace,G1352
+Irene195,Irene,Barquín,1841-12-16,male,Zaldibia,Larraul,bedia,laukiz;errenteria;amezketa,a beautiful mind;harry potter 5: order of the phoenix,G4335
+Mikel660,Mikel,Ortiz,1974-08-27,female,San Millán,Leintz-Gatzaga,ribera alta,,star wars;a beautiful mind;million dollar baby,G3436
+Mohamed938,Mohamed,Kanibe,1870-06-18,female,Urnieta,Aizarnazabal,,arantzazu,spider-man 3;pirates 3: at world’s end,G7023
+Nora582,Nora,Sagasti,1853-12-06,male,Aia,Güeñes,altzaga;orendain;valle de carranza;iruraiz-gauna;lagrán,berriatua;iruña oka /iruña de oca,home alone;shrek the third,G9738
+Nikole861,Nikole,Viteri,1889-02-19,male,Gizaburuaga,Berrobi,zamudio;valle de trápaga-trapagaran,,star wars;beverly hills cop,G8008
+Vega640,Vega,Aanda,1989-03-16,female,Busturia,Etxebarri,,sondika;orio,,G6798
+Nahia136,Nahia,Gamboa,1835-02-24,male,Zegama,Nabarniz,legutio;güeñes;derio,orduña,harry potter 1: sorcerer’s stone,G5284
+Alvaro231,Alvaro,Astete,1937-02-21,female,Artzentales,Eskoriatza,villabona;arrigorriaga;lezo,okondo;artziniega,crash;harry potter 4: goblet of fire,G5273
+Nora986,Nora,Herce,1967-08-13,female,Arrankudiaga,Santurtzi,urduliz,legutio,spider-man 2;et,G4841
+Amaia875,Amaia,Gamboa,1930-04-07,female,Arrasate/Mondragón,Añana,zambrana;usurbil,ajangiz;atxondo,lord of the rings: the return of the king;gladiator,G7210
+Ainhoa919,Ainhoa,Portuondo,1856-04-19,female,Nombre,Berantevilla,gatika;bilbao;aia;dima;bernedo,soraluze-placencia de las armas;lezama;aramaio,harry potter 2: chamber of secrets;ghost busters,G1128
+Hugo931,Hugo,Gamboa,1961-09-23,male,Ezkio,Llodio/Laudio,arraia-maeztu,leaburu,shrek;shrek 2;pirates 2: dead man’s chest,G9158
+Peio7,Peio,Oñate,1984-05-28,male,Ordizia,Leintz-Gatzaga,elantxobe;zizurkil;arraia-maeztu,,chicago;shrek 2;in the company of men,G4705
+Alejandro558,Alejandro,Garay,1976-04-01,female,Salvatierra/Agurain,Zalduondo,okondo;arrieta,,raiders of the lost ark;super size me,G3432
+Alex46,Alex,Casa de Escors,1840-07-28,male,Lazkao,Labastida,alegría-dulantzi,kortezubi;fruiz,the departed,G6566
+Libe461,Libe,Llaguno,1980-09-20,female,Ispaster,Elciego,eibar;forua,,home alone,G4040
+Chloe985,Chloe,Garmendia,1922-03-06,male,Ezkio,Leaburu,erandio;amurrio,,home alone;shrek the third;harry potter 2: chamber of secrets,G6289
+Carla533,Carla,Loyzaga,1909-01-23,female,Mutiloa,Alegría-Dulantzi,zerain,,shrek the third;american beauty;shrek 2;pirates 2: dead man’s chest,G9472
+Inar433,Inar,Astete,1855-04-16,female,Dima,Baños de Ebro/Mañueta,astigarraga,etxebarria;ea,run lola run;the departed,G8911
+Eneko654,Eneko,Arismendi,1941-01-03,female,Alonsotegi,Leintz-Gatzaga,,aulesti;olaberria;leaburu;barakaldo;hernani,lord of the rings: the return of the king,G6724
+Thiago552,Thiago,Vela,1955-10-11,male,Zumaia,Asparrena,,sondika;ondarroa;mallabia,,G1616
+Peio64,Peio,Velasco,1968-12-11,female,Zerain,Bergara,ereño;amezketa,eibar,star wars;home alone,G8296
+Manex969,Manex,Ochoa,1954-12-26,male,Baliarrain,Vitoria-Gasteiz,usurbil,,,G4681
+Ilargi203,Ilargi,Uribe,1829-03-01,male,Ajangiz,Idiazabal,,aizarnazabal,forrest gump,G7711
+David613,David,Aramburu,1952-07-17,female,Ereño,Ribera Baja/Erriberabeitia,ordizia;anoeta,,shrek the third;star wars: phantom menace,G2278
+Thiago157,Thiago,Oñate,1867-07-20,female,Moreda de Álava,Aulesti,laukiz;getxo,ereño;elburgo/burgelu;plentzia;amezketa,run lola run;shrek,G3260
+Aimar926,Aimar,Carranza,1946-12-27,female,Lasarte-Oria,Salvatierra/Agurain,leaburu;aulesti,ataun,,G5537
+Valeria385,Valeria,Loyzaga,1989-04-09,female,Arraia-Maeztu,Pasaia,soraluze-placencia de las armas;zizurkil,forua;etxebarri;alkiza;arrieta,pirates 3: at world’s end,G6170
+Andrea292,Andrea,Amez,1822-04-18,female,Antzuola,Laguardia,andoain;leintz-gatzaga;bergara;lantarón,mutriku;zegama;mutiloa,shakespeare in love;a beautiful mind;batman,G4953
+Luken592,Luken,Sagasti,1825-10-25,male,Leza,Abaltzisketa,orexa;atxondo;barrika,larraul;ibarrangelu,,G8042
+Anne389,Anne,Mendoza,1886-05-27,male,Zalla,Ereño,gaintza;maruri-jatabe,azpeitia,beverly hills cop;pirates 1: curse of the black pearl,G7346
+Ibon365,Ibon,Ortiz,1872-12-10,male,Arantzazu,Berriatua,gernika-lumo;moreda de álava;ibarrangelu,mendexa;gaztelu,home alone,G6980
+Nerea432,Nerea,Velasco,1864-12-06,female,Mallabia,Armiñón,zierbena,atxondo,home alone;a beautiful mind,G6887
+Laida597,Laida,Garay,1924-01-27,male,Zerain,Izurtza,eibar;oyón-oion;lantarón;legorreta,mañaria,harry potter 4: goblet of fire;harry potter 2: chamber of secrets,G3820
+Alex334,Alex,Berrotarán,1869-07-28,female,Ezkio,Ubide,astigarraga;valle de trápaga-trapagaran,areatza;ataun,quinceanera;shrek 2;independence day,G9068
+Vera489,Vera,Elizalde,1903-07-25,female,Leza,Zeanuri,,ondarroa;kripan,harry potter 4: goblet of fire,G4739
+Lander90,Lander,Loyzaga,2003-03-04,male,Izurtza,Eskoriatza,zuia,,spider-man;return of the jedi,G7859
+Daniel494,Daniel,Elizalde,1853-02-14,male,Zalduondo,Berriz,busturia;labastida;mundaka,legazpi;anoeta;artzentales,star wars;chicago;shrek 2,G4362
+Ander87,Ander,Astete,1828-05-01,female,Galdakao,Beizama,,etxebarria;anoeta,beverly hills cop;the last mimzy;titanic,G2815
+Julia440,Julia,Saldívar,1859-08-13,female,Zigoitia,Legorreta,galdakao,amorebieta-etxano;legutio;atxondo,american beauty;spider-man 3;raiders of the lost ark,G2905
+Aimar875,Aimar,Goñiz,1980-04-02,female,Larraul,Hondarribia,ortuella;elvillar/bilar,elburgo/burgelu,harry potter 4: goblet of fire;titanic;et,G4228
+Alain277,Alain,Baigorria,1946-10-25,male,Zuia,Ribera Alta,,urnieta;gamiz-fika,,G6298
+Leire641,Leire,Echenique,1993-04-02,male,Bidegoian,Segura,zierbena;artzentales,zeberio,thirteen;batman,G3139
+Unai592,Unai,Carrera,1828-09-03,female,Lantarón,Atxondo,irura;leintz-gatzaga;sestao,zumaia;arakaldo,shakespeare in love;a beautiful mind,G1041
+Marcos588,Marcos,Kanibe,1840-06-08,female,Etxebarri,Salvatierra/Agurain,elorrio;ibarra,berrobi;zeberio;ondarroa;arrigorriaga,a beautiful mind,G4994
+Marcos863,Marcos,Riquelme,1905-09-23,male,Berastegi,Zestoa,berriz;loiu,,quinceanera,G4510
+Jare108,Jare,Arismendi,1838-05-21,female,Barrika,Elduain,,zuia,batman,G8220
+Mariam39,Mariam,Arismendi,1835-07-26,male,Baños de Ebro/Mañueta,Lemoiz,berriz;ea;arama,irun;munitibar-arbatzegi-gerrikaitz;moreda de álava,,G7013
+Alejandro692,Alejandro,Barquín,1899-01-13,female,Mendexa,Fruiz,artziniega;bakio,ziortza-bolibar,the lion king;shrek 2;the good girl,G6704
+Sare152,Sare,Montoya,1962-08-02,male,Garai,Galdames,samaniego;portugalete;alkiza,andoain;zaldibia,star wars;pirates 1: curse of the black pearl;gladiator,G8301
+Sara0,Sara,Salavarria,1870-12-11,male,Mundaka,Arrankudiaga,fruiz,aulesti;güeñes;zegama;zalla,,G3667
+Valentina401,Valentina,Lizarraga,1984-03-27,male,Gautegiz Arteaga,Ugao-Miraballes,,larrabetzu;valle de trápaga-trapagaran,quinceanera,G7061
+Xare691,Xare,Carrera,1974-02-19,female,Bakio,Errezil,laguardia;zumaia,nabarniz;derio;belauntza,the lion king,G1104
+Asier281,Asier,Lizarraga,1935-10-26,male,Azpeitia,Usurbil,aizarnazabal;ondarroa;ereño,,jurassic park;independence day,G3945
+Mario890,Mario,Muncharaz,1911-03-18,female,Zaratamo,Zerain,itsasondo;ibarra,zerain,forrest gump;star wars;harry potter 5: order of the phoenix,G9326
+Adur493,Adur,Carranza,2002-07-14,male,Antzuola,Peñacerrada-Urizaharra,zigoitia,artea;harana/valle de arana,quinceanera;star wars;batman,G2260
+Laida621,Laida,Ascázubi,1911-06-15,female,Iruraiz-Gauna,Errigoiti,gamiz-fika;plentzia,iruña oka /iruña de oca,harry potter 3: prisoner of azkeban;shrek;independence day,G7159
+Ekain72,Ekain,Astete,1887-10-26,female,Ubide,Plentzia,gaztelu;alegia,,chicago;the road home,G3310
+Mara662,Mara,Uribe,1894-04-03,female,Abaltzisketa,Villabuena de Álava,barakaldo;hernialde,zumaia,pirates 2: dead man’s chest,G8245
+Inar259,Inar,Villaorduña,1991-11-19,male,Eskoriatza,Nabarniz,aulesti;ribera alta;arrieta,hondarribia;zalduondo,the lion king;spider-man 2;gladiator,G8192
+Aitor324,Aitor,Arismendi,1984-06-05,male,Alegría-Dulantzi,Elorrio,,zumaia;gatika;lagrán;arakaldo;alegría-dulantzi,harry potter 4: goblet of fire;star wars: phantom menace,G5062
+Thiago253,Thiago,Arancibia,1901-10-28,female,Bergara,Iruña Oka /Iruña de Oca,,andoain,star wars;independence day,G6593
+Garazi411,Garazi,Goñiz,1964-06-04,male,Artziniega,Mundaka,tolosa,gordexola;elburgo/burgelu,jurassic park;thirteen,G3467
+Carla515,Carla,Berrotarán,1934-08-23,female,Amorebieta-Etxano,Lazkao,pasaia;legazpi,okondo;ziortza-bolibar;zaratamo;arrazua-ubarrundia,,G8865
+Arhane19,Arhane,Herce,1927-12-21,male,Gamiz-Fika,Ortuella,arantzazu,ordizia;portugalete,,G4659
+Nora492,Nora,Urquía,1852-03-28,male,Urretxu,Sondika,mutriku;zamudio;olaberria;zaldibar,mutriku;garai,,G4086
+Arhane766,Arhane,Llaguno,1879-09-13,male,Zuia,Amezketa,galdames;zerain;orozko,abadiño;portugalete,the empire strikes back;spider-man 2;gods and monsters,G6680
+Arhane646,Arhane,Salcedo,1985-12-11,male,Santurtzi,Zuia,aretxabaleta,peñacerrada-urizaharra;gaztelu,,G7868
+Naroa178,Naroa,Barahona,1863-02-08,female,Lekeitio,Larraul,gatika,zaldibia,harry potter 1: sorcerer’s stone;gladiator;the departed,G4901
+Miren719,Miren,Uriarte,1879-11-26,male,Aduna,Larraul,errezil;amoroto,,the lion king;gladiator;in the company of men,G6860
+Iria263,Iria,Garmendia,1876-07-11,female,Leaburu,Labastida,mañaria;zalla,mungia;zestoa;iurreta,,G2700
+Einar260,Einar,Eguiguren,1984-04-11,female,Ubide,Artziniega,lezama;alegría-dulantzi,samaniego,,G3040
+Manex135,Manex,Velasco,1975-04-12,female,Abaltzisketa,Lekeitio,zestoa;lantarón,oiartzun;altzo,,G1436
+Ariane194,Ariane,Ruiz Oria,1907-04-14,female,Lekeitio,Valdegovía,gaztelu,beasain;abanto y ciérvana-abanto zierbena,shrek the third;the road home;spider-man 2,G6413
+Eki960,Eki,Echenique,1865-08-25,male,Hondarribia,Kortezubi,leza,loiu;zaratamo;gabiria,shakespeare in love;titanic,G6290
+Unai496,Unai,Kanibe,1844-12-22,female,Bedia,Villabuena de Álava,beasain;elgeta;arrankudiaga;otxandio;altzaga,segura,the road home,G6138
+Mateo247,Mateo,Kanibe,1821-06-15,male,Zambrana,Eibar,kortezubi;belauntza;baliarrain;ordizia,santurtzi;eskoriatza;forua,star wars;gladiator,G6708
+Unai650,Unai,Llaguno,1939-07-26,male,Mendata,Altzo,valle de carranza,lizartza,shrek 2,G1861
+Santiago167,Santiago,Arismendi,2001-12-19,female,Zuia,Legorreta,munitibar-arbatzegi-gerrikaitz;gamiz-fika,irun;artziniega,harry potter 3: prisoner of azkeban;return of the jedi;the empire strikes back,G9658
+June896,June,Axpe,1923-10-25,female,Lantarón,Baños de Ebro/Mañueta,laguardia,,,G1470
+Lara974,Lara,Salcedo,1911-03-02,female,Alegia,Sopela,olaberria;gordexola;arrieta,izurtza,super size me,G6012
+Eneko295,Eneko,Urquía,1844-09-17,female,Plentzia,Aulesti,aretxabaleta;berriatua;aramaio,laukiz,jurassic park;return of the jedi;spider-man 3;titanic,G6681
+Samuel594,Samuel,Arratia,1840-08-18,female,Lasarte-Oria,Zambrana,aulesti;arrazua-ubarrundia;sopuerta,san millán,harry potter 3: prisoner of azkeban;star wars: phantom menace,G6566
+Vega447,Vega,Villaorduña,1974-06-09,female,Atxondo,Azpeitia,zegama,,thirteen;pirates 3: at world’s end;harry potter 5: order of the phoenix,G8831
+Elene17,Elene,Arancibia,1904-06-21,male,Elciego,Zalduondo,munitibar-arbatzegi-gerrikaitz;mundaka;anoeta;iurreta,ataun;amezketa,raiders of the lost ark;ghost busters,G9934
+Alejandro275,Alejandro,Vizcaíno,1898-10-11,female,Zumaia,Ordizia,urretxu;añana,,chicago;shrek 2;pirates 1: curse of the black pearl;pirates 2: dead man’s chest,G1482
+Lur17,Lur,Allende,1889-10-17,male,Elgeta,Zamudio,laukiz;orendain,gatika;berriz;beizama;elduain,,G7828
+Hugo98,Hugo,Viteri,1959-12-27,male,Legazpi,Segura,,zerain;trucios-turtzioz,star wars: phantom menace;et,G7842
+Laida296,Laida,Astete,1843-03-16,female,Elgeta,Idiazabal,valdegovía;leintz-gatzaga,gernika-lumo;lemoa;arraia-maeztu,harry potter 1: sorcerer’s stone,G9864
+Maddi135,Maddi,Uriarte,1841-08-24,female,Ribera Baja/Erriberabeitia,Lapuebla de Labarca,deba;elantxobe;gaztelu;hernialde,sondika;urnieta;altzaga;tolosa,home alone,G5600
+Enzo979,Enzo,Oñate,1831-03-10,male,Antzuola,Ormaiztegi,ayala/aiara,lapuebla de labarca;getaria;basauri,lord of the rings: the return of the king;shrek 2,G7419
+Paul641,Paul,Baigorria,1960-07-24,female,Getxo,Amezketa,iruña oka /iruña de oca,hondarribia;amoroto,,G7434
+Jon394,Jon,Allende,1890-04-06,female,Valdegovía,Valle de Carranza,,zeberio;segura,star wars;crash;american beauty;harry potter 2: chamber of secrets,G3458
+Liher153,Liher,Jaureguiberry,1877-09-11,female,Berriz,Arratzu,iruraiz-gauna,kripan,harry potter 3: prisoner of azkeban;lord of the rings: the return of the king,G9716
+Eneko858,Eneko,Garay,1971-08-03,female,Santurtzi,Zalduondo,orduña;etxebarria,,chicago;the road home;the good girl,G9086
+Sofia48,Sofia,Urquiza,1966-02-15,male,Lanestosa,Balmaseda,forua,irun;berrobi;harana/valle de arana,super size me,G3628
+Nikole419,Nikole,Larrea,1981-08-07,male,Elburgo/Burgelu,Bakio,ortuella,navaridas;zarautz,home alone;gladiator;ghost busters,G1364
+Eneko975,Eneko,Ortiz,1846-12-22,male,Barrundia,Errigoiti,hernani,gaztelu,forrest gump;gods and monsters,G8928
+Thiago110,Thiago,Viteri,1928-09-28,male,Mendata,Samaniego,zeanuri;elorrio;gordexola;san millán,,,G9784
+Nora550,Nora,Aanda,1978-09-20,female,Bermeo,Fruiz,aizarnazabal;berriatua;elgoibar;zambrana,labastida;arakaldo,run lola run;jurassic park,G9198
+Thiago995,Thiago,Aanda,1940-02-12,female,Murueta,Güeñes,forua;bakio,bergara;iruraiz-gauna,chicago;a beautiful mind;in the company of men,G7348
+Oihan29,Oihan,Ciordia,2000-06-28,female,Leza,Orduña,eibar;elantxobe,zeanuri;derio,titanic,G2438
+Gabriela839,Gabriela,Muncharaz,1964-11-03,male,Legazpi,Arrazua-Ubarrundia,armiñón,mañaria;forua,american beauty;harry potter 2: chamber of secrets,G1224
+Izan704,Izan,Mariñelarena,1977-12-05,male,Fruiz,Peñacerrada-Urizaharra,mungia;zaldibia,aulesti,return of the jedi;gladiator;a beautiful mind;raiders of the lost ark,G8331
+Aitana761,Aitana,Loyzaga,1969-12-24,male,Ziortza-Bolibar,Ubide,berango,ugao-miraballes;forua,harry potter 4: goblet of fire;shrek 2;batman;raiders of the lost ark,G2227
+Leize83,Leize,Larrea,1960-11-09,male,Villabuena de Álava,Bakio,lekeitio;hernani;ezkio,sukarrieta;valle de trápaga-trapagaran,harry potter 3: prisoner of azkeban;in the company of men,G4039
+Lucía194,Lucía,Ossa,1986-07-18,female,Iurreta,Durango,labastida,urretxu;ondarroa,spider-man,G7910
+Manex57,Manex,Ortiz,1896-07-11,female,Errenteria,Zaratamo,leaburu,orendain;abanto y ciérvana-abanto zierbena;derio;mundaka;orozko,pirates 1: curse of the black pearl;the departed,G5709
+Libe379,Libe,Segura,1876-02-11,female,Lemoiz,Maruri-Jatabe,ajangiz;forua,irun;zierbena,pirates 1: curse of the black pearl,G9939
+Martina726,Martina,Portuondo,1834-07-22,female,Ikaztegieta,Itsasondo,bermeo,ribera alta;san millán,thirteen;lord of the rings: the return of the king;pirates 3: at world’s end,G2716
+Maia798,Maia,Loyzaga,1898-01-09,female,Altzaga,Lasarte-Oria,,igorre,pirates 3: at world’s end;harry potter 5: order of the phoenix,G7563
+Leize199,Leize,Aparicio,1931-10-06,male,Ea,Astigarraga,hernialde,leza;fruiz;ordizia,the empire strikes back,G7331
+Kattalin804,Kattalin,Anchorena,1972-11-13,male,Valdegovía,Bergara,dima,mendexa,harry potter 4: goblet of fire;the last mimzy,G9006
+Lorea462,Lorea,Oñate,1896-11-04,female,Ugao-Miraballes,Zuia,labastida,hondarribia;zierbena,harry potter 2: chamber of secrets;et,G9127
+Eneko627,Eneko,Herce,1840-09-10,male,Okondo,Pasaia,,mutriku,,G9590
+Alain116,Alain,Uriarte,1956-09-15,male,Muxika,Segura,,,thirteen,G9812
+Inar985,Inar,Uriarte,1909-03-27,female,San Sebastián,Kortezubi,bedia;san millán,,crash;super size me,G1950
+Fatima741,Fatima,Arismendi,1838-10-25,male,Artea,Antzuola,iruña oka /iruña de oca;san sebastián,hernialde,home alone;the departed,G5099
+Unax626,Unax,Goñiz,1937-05-10,male,Olaberria,Segura,andoain;aretxabaleta;villabuena de álava,antzuola;belauntza,beverly hills cop,G7303
+Eder963,Eder,Casa de Escors,1941-12-23,female,Zaldibia,Artea,ormaiztegi;abadiño;getaria;zambrana,artziniega;urduliz,spider-man 3;gladiator,G8224
+Samuel571,Samuel,Salcedo,1886-11-19,female,Okondo,Zarautz,,mendaro;bedia;altzo;sopuerta,beverly hills cop;spider-man 3;harry potter 5: order of the phoenix,G5641
+Nora840,Nora,Echeverri,1992-10-26,female,Armiñón,Errenteria,erandio,zeberio;lemoa;navaridas,run lola run;quinceanera,G5031
+Vega502,Vega,Axpe,1836-12-14,male,Getxo,Basauri,aulesti;kripan;moreda de álava,berastegi;bidegoian,shrek 2,G1845
+Luka862,Luka,Ochoa,1947-07-26,female,Asteasu,Mañaria,zeanuri,ispaster;bedia;bidegoian,the lion king;spider-man;the good girl,G8954
+Danel808,Danel,Vizcaíno,1963-10-18,female,Zaratamo,Ondarroa,urretxu;belauntza;salvatierra/agurain,azkoitia;ibarrangelu,shakespeare in love,G1131
+Martina454,Martina,Uriarte,1940-12-22,female,Valle de Carranza,Aulesti,deba,gatika;morga;zaratamo,harry potter 4: goblet of fire;ghost busters,G1002
+Eder280,Eder,Muncharaz,1865-12-20,male,Larrabetzu,Usurbil,sukarrieta;zaratamo,nombre;zegama;salvatierra/agurain,shrek;pirates 3: at world’s end;in the company of men,G8063
+Laida790,Laida,Berrotarán,1902-11-22,female,Aia,Ibarrangelu,zaldibia,zerain;berango;zarautz,,G7548
+Izar231,Izar,Barquín,1862-04-11,female,Gamiz-Fika,Sukarrieta,,errezil;errigoiti;berango,crash;harry potter 5: order of the phoenix,G8067
+Samuel618,Samuel,Echenique,1987-06-22,male,Zambrana,Amoroto,lanciego/lantziego;garai,,harry potter 5: order of the phoenix,G6576
+Elaia468,Elaia,Cucullu,1835-02-22,male,Abanto y Ciérvana-Abanto Zierbena,Garai,,munitibar-arbatzegi-gerrikaitz;astigarraga,,G9251
