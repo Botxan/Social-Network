@@ -5,4 +5,4 @@ Assignments of the project: [DSAProjectDescription.pdf](https://github.com/Botxa
 
 Final report: [Social Network Report - .pdf](https://github.com/Botxan/Social-Network/files/7855740/Social.Network.Report.-.pdf)
 
-Class diagram: ![SocialNetworkDiagram](https://user-images.githubusercontent.com/33251573/149171093-50f98eb7-7d2b-4c33-a599-52343c4474de.png)
+Class diagram: ![SocialNetworkDiagram](https://user-images.githubusercontent.com/33251573/149171211-72db859c-f0fe-42cb-b234-b473be717043.jpg)
